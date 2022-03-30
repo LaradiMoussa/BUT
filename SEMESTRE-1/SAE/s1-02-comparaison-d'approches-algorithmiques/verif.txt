@@ -1,0 +1,27 @@
+for i 
+	pos1=a
+	for j 
+		pos2=b
+
+		diffx = pos1x-posx2
+		diffy = pos1y-posy2
+		if diffx < 2 || diffx > -2 && diffy < 2 || diffy > -2
+			pos3x = pos1x + diffx
+			pos3y = pos1y + diffy
+			ligne = 2
+			if pos3x && pos3y == piecemmcouleur
+				pos4x = pos3x + diffx
+				pos4y = pos3y + diffy
+				ligne = 3
+				if pos4x && pos4y == piecemmcouleur
+					puissance4 = true
+			pos3x = pos2x - diffx
+			pos3y = pos2y - diffy
+			ligne = 2
+			if pos3x && pos3y == piecemmcouleur
+				pos4x = pos3x + diffx
+				pos4y = pos3y + diffy
+				ligne = 3
+				if pos4x && pos4y == piecemmcouleur
+					puissance4 = true
+				 

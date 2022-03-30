@@ -1,0 +1,1115 @@
+<?xml version="1.1"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>Algorithme</nom>
+  <date_creation>23/10/2021 19:29</date_creation>
+  <Elements>
+    <Action>
+      <Position>5602;-3</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>?</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>Jeu du pendu</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>0</DetailsVideVisible>
+      <Enfants>
+        <Iteration>
+          <Position>5629.5;97.5</Position>
+          <StyleLien>1</StyleLien>
+          <Titre>?</Titre>
+          <IterationFixe>0</IterationFixe>
+          <Enfants>
+            <Action>
+              <Position>2709;264</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>Initialisation du jeu</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants>
+                <Action>
+                  <Position>1150;420</Position>
+                  <StyleLien>2</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>categorie</PostAssertion>
+                  <Titre>Saisie-Verif de la catégorie</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants>
+                    <Iteration>
+                      <Position>1205.5;518.5</Position>
+                      <StyleLien>1</StyleLien>
+                      <Titre>?</Titre>
+                      <IterationFixe>0</IterationFixe>
+                      <Enfants>
+                        <Action>
+                          <Position>989;611</Position>
+                          <StyleLien>1</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>categorie</PostAssertion>
+                          <Titre>Saisie categorie</Titre>
+                          <DetailsVisible>1</DetailsVisible>
+                          <DetailsVideVisible>0</DetailsVideVisible>
+                          <Enfants/>
+                        </Action>
+                        <Condition>
+                          <Position>1227;618</Position>
+                          <StyleLien>0</StyleLien>
+                          <estUnique>0</estUnique>
+                          <operationsLogiques>
+                            <operation>
+                              <Titre>categorie &lt; 1 ou 
+categorie > 3</Titre>
+                              <Enfants/>
+                            </operation>
+                            <operation>
+                              <Titre>Sinon</Titre>
+                              <Enfants>
+                                <Sortie>
+                                  <Position>1315;719</Position>
+                                </Sortie>
+                              </Enfants>
+                            </operation>
+                          </operationsLogiques>
+                        </Condition>
+                      </Enfants>
+                    </Iteration>
+                  </Enfants>
+                </Action>
+                <Action>
+                  <Position>1951;414</Position>
+                  <StyleLien>2</StyleLien>
+                  <PreAssertion>categorie</PreAssertion>
+                  <PostAssertion>motDevine</PostAssertion>
+                  <Titre>Attribution d'un mot aléatoire dans le tableau de la catégorie choisie</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants>
+                    <ConditionMultiple>
+                      <Position>2087;536</Position>
+                      <StyleLien>0</StyleLien>
+                      <Titre>categorie</Titre>
+                      <operationsLogiques>
+                        <operation>
+                          <Titre>1</Titre>
+                          <Enfants>
+                            <Action>
+                              <Position>1568;623</Position>
+                              <StyleLien>2</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>Attribuer un mot dans Informatique</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>0</DetailsVideVisible>
+                              <Enfants>
+                                <Action>
+                                  <Position>1553;720</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <PreAssertion>categorie</PreAssertion>
+                                  <PostAssertion>nomCategorie</PostAssertion>
+                                  <Titre>nomCategorie ← "Informatique"</Titre>
+                                  <DetailsVisible>1</DetailsVisible>
+                                  <DetailsVideVisible>1</DetailsVideVisible>
+                                  <Enfants/>
+                                </Action>
+                                <Action>
+                                  <Position>1362;779</Position>
+                                  <StyleLien>2</StyleLien>
+                                  <PreAssertion>motInformatique</PreAssertion>
+                                  <PostAssertion>motDevine</PostAssertion>
+                                  <Titre>attibution d'un mot aléatoire dns la catégorie informatique</Titre>
+                                  <DetailsVisible>1</DetailsVisible>
+                                  <DetailsVideVisible>1</DetailsVideVisible>
+                                  <Enfants>
+                                    <Action>
+                                      <Position>1370;882</Position>
+                                      <StyleLien>1</StyleLien>
+                                      <PreAssertion>motInformatique</PreAssertion>
+                                      <PostAssertion>motDevine</PostAssertion>
+                                      <Titre>motDevine ← 
+motInformatique[nb aléatoire]</Titre>
+                                      <DetailsVisible>1</DetailsVisible>
+                                      <DetailsVideVisible>1</DetailsVideVisible>
+                                      <Enfants/>
+                                    </Action>
+                                  </Enfants>
+                                </Action>
+                              </Enfants>
+                            </Action>
+                          </Enfants>
+                        </operation>
+                        <operation>
+                          <Titre>2</Titre>
+                          <Enfants>
+                            <Action>
+                              <Position>2044;624</Position>
+                              <StyleLien>2</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>Attribuer un mot dans Animaux</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>0</DetailsVideVisible>
+                              <Enfants>
+                                <Action>
+                                  <Position>2025;722</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <PreAssertion>categorie</PreAssertion>
+                                  <PostAssertion>nomCategorie</PostAssertion>
+                                  <Titre>nomCategorie ← "Informatique"</Titre>
+                                  <DetailsVisible>1</DetailsVisible>
+                                  <DetailsVideVisible>1</DetailsVideVisible>
+                                  <Enfants/>
+                                </Action>
+                                <Action>
+                                  <Position>1864;786</Position>
+                                  <StyleLien>2</StyleLien>
+                                  <PreAssertion>motAnimaux</PreAssertion>
+                                  <PostAssertion>motDevine</PostAssertion>
+                                  <Titre>attibution d'un mot aléatoire dns la catégorie animaux</Titre>
+                                  <DetailsVisible>1</DetailsVisible>
+                                  <DetailsVideVisible>1</DetailsVideVisible>
+                                  <Enfants>
+                                    <Action>
+                                      <Position>1889;889</Position>
+                                      <StyleLien>1</StyleLien>
+                                      <PreAssertion>motAnimaux</PreAssertion>
+                                      <PostAssertion>motDevine</PostAssertion>
+                                      <Titre>motDevine ← 
+motAnimaux[nb aléatoire]</Titre>
+                                      <DetailsVisible>1</DetailsVisible>
+                                      <DetailsVideVisible>1</DetailsVideVisible>
+                                      <Enfants/>
+                                    </Action>
+                                  </Enfants>
+                                </Action>
+                              </Enfants>
+                            </Action>
+                          </Enfants>
+                        </operation>
+                        <operation>
+                          <Titre>3</Titre>
+                          <Enfants>
+                            <Action>
+                              <Position>2483;622</Position>
+                              <StyleLien>2</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>Attribuer un mot dans Pays</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>0</DetailsVideVisible>
+                              <Enfants>
+                                <Action>
+                                  <Position>2480;725</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <PreAssertion>categorie</PreAssertion>
+                                  <PostAssertion>nomCategorie</PostAssertion>
+                                  <Titre>nomCategorie ← "Informatique"</Titre>
+                                  <DetailsVisible>1</DetailsVisible>
+                                  <DetailsVideVisible>1</DetailsVideVisible>
+                                  <Enfants/>
+                                </Action>
+                                <Action>
+                                  <Position>2360;789</Position>
+                                  <StyleLien>2</StyleLien>
+                                  <PreAssertion>motPays</PreAssertion>
+                                  <PostAssertion>motDevine</PostAssertion>
+                                  <Titre>attibution d'un mot aléatoire dns la catégorie pays</Titre>
+                                  <DetailsVisible>1</DetailsVisible>
+                                  <DetailsVideVisible>1</DetailsVideVisible>
+                                  <Enfants>
+                                    <Action>
+                                      <Position>2398;891</Position>
+                                      <StyleLien>1</StyleLien>
+                                      <PreAssertion>motPays</PreAssertion>
+                                      <PostAssertion>motDevine</PostAssertion>
+                                      <Titre>motDevine ← 
+motPays[nb aléatoire]</Titre>
+                                      <DetailsVisible>1</DetailsVisible>
+                                      <DetailsVideVisible>1</DetailsVideVisible>
+                                      <Enfants/>
+                                    </Action>
+                                  </Enfants>
+                                </Action>
+                              </Enfants>
+                            </Action>
+                          </Enfants>
+                        </operation>
+                      </operationsLogiques>
+                    </ConditionMultiple>
+                  </Enfants>
+                </Action>
+                <Action>
+                  <Position>2550;418</Position>
+                  <StyleLien>2</StyleLien>
+                  <PreAssertion>motDevine</PreAssertion>
+                  <PostAssertion>motJoueur</PostAssertion>
+                  <Titre>définition motJoueur</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants>
+                    <Action>
+                      <Position>2538;520</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>motDevine</PreAssertion>
+                      <PostAssertion>motJoueur</PostAssertion>
+                      <Titre>motJoueur ← motDevine</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>1</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </Action>
+                <Action>
+                  <Position>2940;420</Position>
+                  <StyleLien>2</StyleLien>
+                  <PreAssertion>motJoueur</PreAssertion>
+                  <PostAssertion>motJoueur</PostAssertion>
+                  <Titre>Cacher les lettres du motJoueur</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants>
+                    <Iteration>
+                      <Position>3115.5;546.5</Position>
+                      <StyleLien>1</StyleLien>
+                      <Titre>pour i de 0 à 
+la taille du mot</Titre>
+                      <IterationFixe>1</IterationFixe>
+                      <Enfants>
+                        <Action>
+                          <Position>2958;687</Position>
+                          <StyleLien>1</StyleLien>
+                          <PreAssertion>motJoueur</PreAssertion>
+                          <PostAssertion>motJoueur</PostAssertion>
+                          <Titre>motJoueur[i] ← "-"</Titre>
+                          <DetailsVisible>1</DetailsVisible>
+                          <DetailsVideVisible>1</DetailsVideVisible>
+                          <Enfants/>
+                        </Action>
+                      </Enfants>
+                    </Iteration>
+                  </Enfants>
+                </Action>
+                <Action>
+                  <Position>3359;421</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>effacer le terminal</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+              </Enfants>
+            </Action>
+            <Action>
+              <Position>6134;193</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>Deroulement du jeu</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants>
+                <Iteration>
+                  <Position>6173.5;260.5</Position>
+                  <StyleLien>1</StyleLien>
+                  <Titre>?</Titre>
+                  <IterationFixe>0</IterationFixe>
+                  <Enfants>
+                    <Action>
+                      <Position>6182;382</Position>
+                      <StyleLien>2</StyleLien>
+                      <PreAssertion>dejaSaisie, lettre,
+motDevine</PreAssertion>
+                      <PostAssertion>presence, [motJoueur], [listeMauvaiseLettre]</PostAssertion>
+                      <Titre>Verifier si la lettre est présente dans le mot si elle n'a pas déjà été essayée</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>1</DetailsVideVisible>
+                      <Enfants>
+                        <Condition>
+                          <Position>6352;472</Position>
+                          <StyleLien>1</StyleLien>
+                          <estUnique>1</estUnique>
+                          <operationsLogiques>
+                            <operation>
+                              <Titre>dejaSaisie = false</Titre>
+                              <Enfants>
+                                <Iteration>
+                                  <Position>6384.5;559.5</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <Titre>pour i de 0 à 
+la taille du mot</Titre>
+                                  <IterationFixe>1</IterationFixe>
+                                  <Enfants>
+                                    <Condition>
+                                      <Position>6376;657</Position>
+                                      <StyleLien>1</StyleLien>
+                                      <estUnique>0</estUnique>
+                                      <operationsLogiques>
+                                        <operation>
+                                          <Titre>motDevine[i] = lettre[0]</Titre>
+                                          <Enfants>
+                                            <Action>
+                                              <Position>6215;759</Position>
+                                              <StyleLien>1</StyleLien>
+                                              <PreAssertion>lettre</PreAssertion>
+                                              <PostAssertion>motJoueur</PostAssertion>
+                                              <Titre>motJoueur[i] = lettre[0]</Titre>
+                                              <DetailsVisible>1</DetailsVisible>
+                                              <DetailsVideVisible>1</DetailsVideVisible>
+                                              <Enfants/>
+                                            </Action>
+                                            <Action>
+                                              <Position>6557;760</Position>
+                                              <StyleLien>1</StyleLien>
+                                              <PreAssertion>presence</PreAssertion>
+                                              <PostAssertion>presence</PostAssertion>
+                                              <Titre>presence = true</Titre>
+                                              <DetailsVisible>1</DetailsVisible>
+                                              <DetailsVideVisible>1</DetailsVideVisible>
+                                              <Enfants/>
+                                            </Action>
+                                          </Enfants>
+                                        </operation>
+                                        <operation>
+                                          <Titre>Sinon</Titre>
+                                          <Enfants/>
+                                        </operation>
+                                      </operationsLogiques>
+                                    </Condition>
+                                  </Enfants>
+                                </Iteration>
+                              </Enfants>
+                            </operation>
+                            <operation>
+                              <Titre>Sinon</Titre>
+                              <Enfants/>
+                            </operation>
+                          </operationsLogiques>
+                        </Condition>
+                      </Enfants>
+                    </Action>
+                    <Action>
+                      <Position>6881;391</Position>
+                      <StyleLien>2</StyleLien>
+                      <PreAssertion>presence</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>afficher si le joueur a saisi
+une lettre correcte</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants>
+                        <Condition>
+                          <Position>7011;509</Position>
+                          <StyleLien>0</StyleLien>
+                          <estUnique>0</estUnique>
+                          <operationsLogiques>
+                            <operation>
+                              <Titre>presence = true</Titre>
+                              <Enfants>
+                                <Action>
+                                  <Position>6838;638</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <PreAssertion>?</PreAssertion>
+                                  <PostAssertion>?</PostAssertion>
+                                  <Titre>afficher que le joueur a saisi une lettre correcte</Titre>
+                                  <DetailsVisible>1</DetailsVisible>
+                                  <DetailsVideVisible>0</DetailsVideVisible>
+                                  <Enfants/>
+                                </Action>
+                              </Enfants>
+                            </operation>
+                            <operation>
+                              <Titre>Sinon</Titre>
+                              <Enfants>
+                                <Action>
+                                  <Position>7081;635</Position>
+                                  <StyleLien>2</StyleLien>
+                                  <PreAssertion>nbreEssais, listeMauvaiseLettre</PreAssertion>
+                                  <PostAssertion>nbreEssais, listeMauvaiseLettre</PostAssertion>
+                                  <Titre>gestion de la lettre incorrecte</Titre>
+                                  <DetailsVisible>1</DetailsVisible>
+                                  <DetailsVideVisible>1</DetailsVideVisible>
+                                  <Enfants>
+                                    <Action>
+                                      <Position>6928;770</Position>
+                                      <StyleLien>1</StyleLien>
+                                      <PreAssertion>?</PreAssertion>
+                                      <PostAssertion>?</PostAssertion>
+                                      <Titre>afficher que la lettre
+n'est pas dans le mot</Titre>
+                                      <DetailsVisible>1</DetailsVisible>
+                                      <DetailsVideVisible>0</DetailsVideVisible>
+                                      <Enfants/>
+                                    </Action>
+                                    <Action>
+                                      <Position>7069;770</Position>
+                                      <StyleLien>1</StyleLien>
+                                      <PreAssertion>listeMauvaiseLettre, lettre</PreAssertion>
+                                      <PostAssertion>listeMauvaiseLettre</PostAssertion>
+                                      <Titre>listeMauvaiseLettre ← listeMauvaiseLettre + lettre</Titre>
+                                      <DetailsVisible>1</DetailsVisible>
+                                      <DetailsVideVisible>1</DetailsVideVisible>
+                                      <Enfants/>
+                                    </Action>
+                                    <Action>
+                                      <Position>7639;770</Position>
+                                      <StyleLien>1</StyleLien>
+                                      <PreAssertion>nbreEssais</PreAssertion>
+                                      <PostAssertion>nbreEssais</PostAssertion>
+                                      <Titre>nbreEssais =
+nbreEssais - 1</Titre>
+                                      <DetailsVisible>1</DetailsVisible>
+                                      <DetailsVideVisible>1</DetailsVideVisible>
+                                      <Enfants/>
+                                    </Action>
+                                  </Enfants>
+                                </Action>
+                              </Enfants>
+                            </operation>
+                          </operationsLogiques>
+                        </Condition>
+                      </Enfants>
+                    </Action>
+                    <Action>
+                      <Position>7308;388</Position>
+                      <StyleLien>2</StyleLien>
+                      <PreAssertion>dejaSaisie, presence, lettre</PreAssertion>
+                      <PostAssertion>dejaSaisie, presence, lettre</PostAssertion>
+                      <Titre>réinitialisation des variables pour la prochaine saisie</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>1</DetailsVideVisible>
+                      <Enfants>
+                        <Action>
+                          <Position>7319;506</Position>
+                          <StyleLien>1</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>dejaSaisie</PostAssertion>
+                          <Titre>dejaSaisie=false</Titre>
+                          <DetailsVisible>1</DetailsVisible>
+                          <DetailsVideVisible>0</DetailsVideVisible>
+                          <Enfants/>
+                        </Action>
+                        <Action>
+                          <Position>7543;508</Position>
+                          <StyleLien>1</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>presence</PostAssertion>
+                          <Titre>presence = false</Titre>
+                          <DetailsVisible>1</DetailsVisible>
+                          <DetailsVideVisible>0</DetailsVideVisible>
+                          <Enfants/>
+                        </Action>
+                        <Action>
+                          <Position>7762;510</Position>
+                          <StyleLien>1</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>lettre</PostAssertion>
+                          <Titre>lettre = "-"</Titre>
+                          <DetailsVisible>1</DetailsVisible>
+                          <DetailsVideVisible>0</DetailsVideVisible>
+                          <Enfants/>
+                        </Action>
+                        <Action>
+                          <Position>7923;511</Position>
+                          <StyleLien>1</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>?</PostAssertion>
+                          <Titre>pause de 1 seconde</Titre>
+                          <DetailsVisible>1</DetailsVisible>
+                          <DetailsVideVisible>0</DetailsVideVisible>
+                          <Enfants/>
+                        </Action>
+                        <Action>
+                          <Position>8047;510</Position>
+                          <StyleLien>1</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>?</PostAssertion>
+                          <Titre>effacer le terminal</Titre>
+                          <DetailsVisible>1</DetailsVisible>
+                          <DetailsVideVisible>0</DetailsVideVisible>
+                          <Enfants/>
+                        </Action>
+                      </Enfants>
+                    </Action>
+                    <Action>
+                      <Position>5620;383</Position>
+                      <StyleLien>2</StyleLien>
+                      <PreAssertion>lettre, dejaSaisie, listeMauvaiseLettre</PreAssertion>
+                      <PostAssertion>dejaSaisie, nbreEssais</PostAssertion>
+                      <Titre>Verifier si la lettre est déja
+saisie et non valide</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>1</DetailsVideVisible>
+                      <Enfants>
+                        <Condition>
+                          <Position>5822;474</Position>
+                          <StyleLien>1</StyleLien>
+                          <estUnique>1</estUnique>
+                          <operationsLogiques>
+                            <operation>
+                              <Titre>dejaSaisie = false</Titre>
+                              <Enfants>
+                                <Iteration>
+                                  <Position>5850.5;561.5</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <Titre>pour i de 0 à 
+la taille du mot</Titre>
+                                  <IterationFixe>1</IterationFixe>
+                                  <Enfants>
+                                    <Condition>
+                                      <Position>5778;661</Position>
+                                      <StyleLien>1</StyleLien>
+                                      <estUnique>0</estUnique>
+                                      <operationsLogiques>
+                                        <operation>
+                                          <Titre>listeMauvaiseLettre[i] = lettre[0]</Titre>
+                                          <Enfants>
+                                            <Action>
+                                              <Position>5634;762</Position>
+                                              <StyleLien>1</StyleLien>
+                                              <PreAssertion>?</PreAssertion>
+                                              <PostAssertion>?</PostAssertion>
+                                              <Titre>Afficher que la lettre a déjà été essayée </Titre>
+                                              <DetailsVisible>1</DetailsVisible>
+                                              <DetailsVideVisible>0</DetailsVideVisible>
+                                              <Enfants/>
+                                            </Action>
+                                            <Action>
+                                              <Position>5419;762</Position>
+                                              <StyleLien>1</StyleLien>
+                                              <PreAssertion>?</PreAssertion>
+                                              <PostAssertion>dejaSaisie</PostAssertion>
+                                              <Titre>dejaSaisie = true</Titre>
+                                              <DetailsVisible>1</DetailsVisible>
+                                              <DetailsVideVisible>0</DetailsVideVisible>
+                                              <Enfants/>
+                                            </Action>
+                                            <Sortie>
+                                              <Position>6153;773</Position>
+                                            </Sortie>
+                                          </Enfants>
+                                        </operation>
+                                        <operation>
+                                          <Titre>Sinon</Titre>
+                                          <Enfants/>
+                                        </operation>
+                                      </operationsLogiques>
+                                    </Condition>
+                                  </Enfants>
+                                </Iteration>
+                              </Enfants>
+                            </operation>
+                            <operation>
+                              <Titre>Sinon</Titre>
+                              <Enfants/>
+                            </operation>
+                          </operationsLogiques>
+                        </Condition>
+                      </Enfants>
+                    </Action>
+                    <Action>
+                      <Position>5167;383</Position>
+                      <StyleLien>2</StyleLien>
+                      <PreAssertion>lettre, motJoueur</PreAssertion>
+                      <PostAssertion>dejaSaisie</PostAssertion>
+                      <Titre>Verifier si la lettre est déja
+saisie et valide</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>1</DetailsVideVisible>
+                      <Enfants>
+                        <Iteration>
+                          <Position>5361.5;476.5</Position>
+                          <StyleLien>1</StyleLien>
+                          <Titre>pour i de 0 à 
+la taille du mot</Titre>
+                          <IterationFixe>1</IterationFixe>
+                          <Enfants>
+                            <Condition>
+                              <Position>5288;577</Position>
+                              <StyleLien>1</StyleLien>
+                              <estUnique>0</estUnique>
+                              <operationsLogiques>
+                                <operation>
+                                  <Titre>motJoueur[i] = lettre[0]</Titre>
+                                  <Enfants>
+                                    <Action>
+                                      <Position>5084;664</Position>
+                                      <StyleLien>1</StyleLien>
+                                      <PreAssertion>?</PreAssertion>
+                                      <PostAssertion>dejaSaisie</PostAssertion>
+                                      <Titre>dejaSaisie = true</Titre>
+                                      <DetailsVisible>1</DetailsVisible>
+                                      <DetailsVideVisible>0</DetailsVideVisible>
+                                      <Enfants/>
+                                    </Action>
+                                    <Action>
+                                      <Position>5299;664</Position>
+                                      <StyleLien>1</StyleLien>
+                                      <PreAssertion>?</PreAssertion>
+                                      <PostAssertion>?</PostAssertion>
+                                      <Titre>Afficher que la lettre a déjà été essayée </Titre>
+                                      <DetailsVisible>1</DetailsVisible>
+                                      <DetailsVideVisible>0</DetailsVideVisible>
+                                      <Enfants/>
+                                    </Action>
+                                    <Sortie>
+                                      <Position>5523;670</Position>
+                                    </Sortie>
+                                  </Enfants>
+                                </operation>
+                                <operation>
+                                  <Titre>Sinon</Titre>
+                                  <Enfants/>
+                                </operation>
+                              </operationsLogiques>
+                            </Condition>
+                          </Enfants>
+                        </Iteration>
+                      </Enfants>
+                    </Action>
+                    <Action>
+                      <Position>4782;383</Position>
+                      <StyleLien>2</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>lettre</PostAssertion>
+                      <Titre>Saisie-Vérif de la lettre saisie</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants>
+                        <Iteration>
+                          <Position>4850.5;461.5</Position>
+                          <StyleLien>1</StyleLien>
+                          <Titre>?</Titre>
+                          <IterationFixe>0</IterationFixe>
+                          <Enfants>
+                            <Action>
+                              <Position>4634;554</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>lettre</PostAssertion>
+                              <Titre>Saisie lettre</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>0</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                            <Condition>
+                              <Position>4872;561</Position>
+                              <StyleLien>0</StyleLien>
+                              <estUnique>0</estUnique>
+                              <operationsLogiques>
+                                <operation>
+                                  <Titre>taille de la chaine de caractères "lettre" > 1</Titre>
+                                  <Enfants/>
+                                </operation>
+                                <operation>
+                                  <Titre>Sinon</Titre>
+                                  <Enfants>
+                                    <Sortie>
+                                      <Position>4960;662</Position>
+                                    </Sortie>
+                                  </Enfants>
+                                </operation>
+                              </operationsLogiques>
+                            </Condition>
+                          </Enfants>
+                        </Iteration>
+                      </Enfants>
+                    </Action>
+                    <Action>
+                      <Position>4007;406</Position>
+                      <StyleLien>2</StyleLien>
+                      <PreAssertion>nbreEssais</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>Afficher le nombre de tentatives restantes</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants>
+                        <Condition>
+                          <Position>4092;535</Position>
+                          <StyleLien>0</StyleLien>
+                          <estUnique>0</estUnique>
+                          <operationsLogiques>
+                            <operation>
+                              <Titre>nbreEssais > 3</Titre>
+                              <Enfants>
+                                <Action>
+                                  <Position>3651;660</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <PreAssertion>nbreEssais</PreAssertion>
+                                  <PostAssertion>?</PostAssertion>
+                                  <Titre>afficher les tentatives en vert</Titre>
+                                  <DetailsVisible>1</DetailsVisible>
+                                  <DetailsVideVisible>0</DetailsVideVisible>
+                                  <Enfants/>
+                                </Action>
+                              </Enfants>
+                            </operation>
+                            <operation>
+                              <Titre>nbreEssais >  1</Titre>
+                              <Enfants>
+                                <Action>
+                                  <Position>3942;657</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <PreAssertion>nbreEssais</PreAssertion>
+                                  <PostAssertion>?</PostAssertion>
+                                  <Titre>afficher les tentatives en violet</Titre>
+                                  <DetailsVisible>1</DetailsVisible>
+                                  <DetailsVideVisible>0</DetailsVideVisible>
+                                  <Enfants/>
+                                </Action>
+                              </Enfants>
+                            </operation>
+                            <operation>
+                              <Titre>Sinon</Titre>
+                              <Enfants>
+                                <Action>
+                                  <Position>4239;656</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <PreAssertion>nbreEssais</PreAssertion>
+                                  <PostAssertion>?</PostAssertion>
+                                  <Titre>afficher les tentatives en rouge</Titre>
+                                  <DetailsVisible>1</DetailsVisible>
+                                  <DetailsVideVisible>0</DetailsVideVisible>
+                                  <Enfants/>
+                                </Action>
+                              </Enfants>
+                            </operation>
+                          </operationsLogiques>
+                        </Condition>
+                      </Enfants>
+                    </Action>
+                    <Action>
+                      <Position>3599;406</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>nomCategorie, motJoueur</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>Afficher la catégorie choisie et le mot caché que le joueur cherche</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                    <Action>
+                      <Position>8103;389</Position>
+                      <StyleLien>2</StyleLien>
+                      <PreAssertion>nbreEssais, [motDevine]</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>gestion de la défaite du joueur</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants>
+                        <Condition>
+                          <Position>8279;513</Position>
+                          <StyleLien>1</StyleLien>
+                          <estUnique>0</estUnique>
+                          <operationsLogiques>
+                            <operation>
+                              <Titre>nbreEssais = 1</Titre>
+                              <Enfants>
+                                <Action>
+                                  <Position>8029;629</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <PreAssertion>?</PreAssertion>
+                                  <PostAssertion>?</PostAssertion>
+                                  <Titre>afficher message de défaite
+et dessin pendu</Titre>
+                                  <DetailsVisible>1</DetailsVisible>
+                                  <DetailsVideVisible>0</DetailsVideVisible>
+                                  <Enfants/>
+                                </Action>
+                                <Action>
+                                  <Position>8205;626</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <PreAssertion>motDevine</PreAssertion>
+                                  <PostAssertion>?</PostAssertion>
+                                  <Titre>Afficher le mot qui
+était à trouver</Titre>
+                                  <DetailsVisible>1</DetailsVisible>
+                                  <DetailsVideVisible>0</DetailsVideVisible>
+                                  <Enfants/>
+                                </Action>
+                                <Action>
+                                  <Position>8420;626</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <PreAssertion>?</PreAssertion>
+                                  <PostAssertion>?</PostAssertion>
+                                  <Titre>pause de 2 secondes</Titre>
+                                  <DetailsVisible>1</DetailsVisible>
+                                  <DetailsVideVisible>0</DetailsVideVisible>
+                                  <Enfants/>
+                                </Action>
+                                <Sortie>
+                                  <Position>8560;636</Position>
+                                </Sortie>
+                              </Enfants>
+                            </operation>
+                            <operation>
+                              <Titre>Sinon</Titre>
+                              <Enfants/>
+                            </operation>
+                          </operationsLogiques>
+                        </Condition>
+                      </Enfants>
+                    </Action>
+                  </Enfants>
+                </Iteration>
+              </Enfants>
+            </Action>
+            <Action>
+              <Position>9119;252</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>Fin du jeu</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants>
+                <Action>
+                  <Position>8536;393</Position>
+                  <StyleLien>2</StyleLien>
+                  <PreAssertion>nbreEssais</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>gestion de la victoire </Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants>
+                    <Action>
+                      <Position>8512;500</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>Afficher message victoire </Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                    <Action>
+                      <Position>8682;499</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>pause de 2 secondes </Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </Action>
+                <Action>
+                  <Position>8847;402</Position>
+                  <StyleLien>2</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>choix</PostAssertion>
+                  <Titre>saisieVerifChoix</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants>
+                    <Iteration>
+                      <Position>8883.5;495.5</Position>
+                      <StyleLien>1</StyleLien>
+                      <Titre>?</Titre>
+                      <IterationFixe>0</IterationFixe>
+                      <Enfants>
+                        <Action>
+                          <Position>8731;608</Position>
+                          <StyleLien>1</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>choix</PostAssertion>
+                          <Titre>Saisie choix</Titre>
+                          <DetailsVisible>1</DetailsVisible>
+                          <DetailsVideVisible>0</DetailsVideVisible>
+                          <Enfants/>
+                        </Action>
+                        <Condition>
+                          <Position>8917;613</Position>
+                          <StyleLien>1</StyleLien>
+                          <estUnique>0</estUnique>
+                          <operationsLogiques>
+                            <operation>
+                              <Titre>choix = 1 ou
+choix = 2</Titre>
+                              <Enfants>
+                                <Sortie>
+                                  <Position>8955;690</Position>
+                                </Sortie>
+                              </Enfants>
+                            </operation>
+                            <operation>
+                              <Titre>Sinon</Titre>
+                              <Enfants/>
+                            </operation>
+                          </operationsLogiques>
+                        </Condition>
+                      </Enfants>
+                    </Iteration>
+                  </Enfants>
+                </Action>
+                <Condition>
+                  <Position>9319;354</Position>
+                  <StyleLien>0</StyleLien>
+                  <estUnique>0</estUnique>
+                  <operationsLogiques>
+                    <operation>
+                      <Titre>choix = 1</Titre>
+                      <Enfants>
+                        <Action>
+                          <Position>9130;537</Position>
+                          <StyleLien>2</StyleLien>
+                          <PreAssertion>choix, categorie, listeMauvaiseLettre</PreAssertion>
+                          <PostAssertion>choix, categorie, listeMauvaiseLettre</PostAssertion>
+                          <Titre>gestion relancer partie</Titre>
+                          <DetailsVisible>1</DetailsVisible>
+                          <DetailsVideVisible>1</DetailsVideVisible>
+                          <Enfants>
+                            <Action>
+                              <Position>9096;647</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>choix</PostAssertion>
+                              <Titre>choix ← 0</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>0</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                            <Action>
+                              <Position>9253;648</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>categorie</PostAssertion>
+                              <Titre>categorie ← 0</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>0</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                            <Action>
+                              <Position>9450;648</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>nbreEssais</PostAssertion>
+                              <Titre>nbreEssais ← 7</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>0</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                            <Action>
+                              <Position>9868;644</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>effacer le
+terminal</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>0</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                            <Action>
+                              <Position>9516;719</Position>
+                              <StyleLien>2</StyleLien>
+                              <PreAssertion>listeMauvaseLettre</PreAssertion>
+                              <PostAssertion>listeMauvaseLettre</PostAssertion>
+                              <Titre>réinitialiser 
+listeMauvaiseLettre</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>1</DetailsVideVisible>
+                              <Enfants>
+                                <Iteration>
+                                  <Position>9710.5;834.5</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <Titre>pour i de 0 à taille listeMauvaiseLettre</Titre>
+                                  <IterationFixe>1</IterationFixe>
+                                  <Enfants>
+                                    <Action>
+                                      <Position>9585;937</Position>
+                                      <StyleLien>1</StyleLien>
+                                      <PreAssertion>?</PreAssertion>
+                                      <PostAssertion>listeMauvaiseLettre</PostAssertion>
+                                      <Titre>listeMauvaiseLettre[i] ← "-"</Titre>
+                                      <DetailsVisible>1</DetailsVisible>
+                                      <DetailsVideVisible>0</DetailsVideVisible>
+                                      <Enfants/>
+                                    </Action>
+                                  </Enfants>
+                                </Iteration>
+                              </Enfants>
+                            </Action>
+                          </Enfants>
+                        </Action>
+                      </Enfants>
+                    </operation>
+                    <operation>
+                      <Titre>Sinon</Titre>
+                      <Enfants>
+                        <Action>
+                          <Position>9720;446</Position>
+                          <StyleLien>2</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>jouer</PostAssertion>
+                          <Titre>fin du jeu</Titre>
+                          <DetailsVisible>1</DetailsVisible>
+                          <DetailsVideVisible>0</DetailsVideVisible>
+                          <Enfants>
+                            <Action>
+                              <Position>9711;537</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>jouer</PostAssertion>
+                              <Titre>jouer ← false</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>0</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                          </Enfants>
+                        </Action>
+                      </Enfants>
+                    </operation>
+                  </operationsLogiques>
+                </Condition>
+              </Enfants>
+            </Action>
+            <Action>
+              <Position>729;396</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>jouer</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>nouvelle partie</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants>
+                <Condition>
+                  <Position>743;513</Position>
+                  <StyleLien>0</StyleLien>
+                  <estUnique>0</estUnique>
+                  <operationsLogiques>
+                    <operation>
+                      <Titre>jouer = true</Titre>
+                      <Enfants/>
+                    </operation>
+                    <operation>
+                      <Titre>Sinon</Titre>
+                      <Enfants>
+                        <Sortie>
+                          <Position>870;607</Position>
+                        </Sortie>
+                      </Enfants>
+                    </operation>
+                  </operationsLogiques>
+                </Condition>
+              </Enfants>
+            </Action>
+          </Enfants>
+        </Iteration>
+      </Enfants>
+    </Action>
+    <Action>
+      <Position>5843;762</Position>
+      <StyleLien>1</StyleLien>
+      <PreAssertion>?</PreAssertion>
+      <PostAssertion>nbreEssais</PostAssertion>
+      <Titre>nbreEssais ← nbreEssais - 1</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>0</DetailsVideVisible>
+      <Enfants/>
+    </Action>
+  </Elements>
+</Algorithme>

@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="tp5" version="4">
+  <OBJECT>
+    <ID name="tp5" mc="Standard.Package" uid="d7b9ba07-cf1e-42dc-bd06-516fda84bb24"/>
+    <PID name="tp5" mc="Standard.Project" uid="52d0cadc-e000-4c8d-9fe9-caffe7dd6a43"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[tp5]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Présenter sa candidature" mc="Standard.Interaction" uid="eca6a229-b089-40e9-a04b-89f614bbf791"/>
+        <COMPID name="Fournir les informations" mc="Standard.Interaction" uid="641a0dea-d593-44fd-8ddb-03f6e3585675"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

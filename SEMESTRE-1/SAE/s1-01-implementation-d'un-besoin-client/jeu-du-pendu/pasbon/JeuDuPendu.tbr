@@ -1,0 +1,1508 @@
+<?xml version="1.1"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>Algorithme</nom>
+  <date_creation>14/10/2021 20:17</date_creation>
+  <Elements>
+    <Action>
+      <Position>2781;448</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>?</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>Jeu du pendu</Titre>
+      <DetailsVisible>0</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants>
+        <Iteration>
+          <Position>2808.5;529.5</Position>
+          <StyleLien>1</StyleLien>
+          <Titre>?</Titre>
+          <IterationFixe>0</IterationFixe>
+          <Enfants>
+            <Action>
+              <Position>2736;796</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>Deviner un mot dans le thème choisi</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants>
+                <Iteration>
+                  <Position>2822.5;1081.5</Position>
+                  <StyleLien>1</StyleLien>
+                  <Titre>?</Titre>
+                  <IterationFixe>0</IterationFixe>
+                  <Enfants>
+                    <Action>
+                      <Position>2278;1254</Position>
+                      <StyleLien>2</StyleLien>
+                      <PreAssertion>motADeviner</PreAssertion>
+                      <PostAssertion>letPresente, [posLettre]</PostAssertion>
+                      <Titre>Recherche de la présence
+de la lettre</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>1</DetailsVideVisible>
+                      <Enfants>
+                        <Action>
+                          <Position>2117;1381</Position>
+                          <StyleLien>2</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>letPresente</PostAssertion>
+                          <Titre>Initialiser la
+recherche</Titre>
+                          <DetailsVisible>1</DetailsVisible>
+                          <DetailsVideVisible>0</DetailsVideVisible>
+                          <Enfants>
+                            <Action>
+                              <Position>2233;1518</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>letPresente</PostAssertion>
+                              <Titre>letPresente ← False</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>0</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                          </Enfants>
+                        </Action>
+                        <Action>
+                          <Position>2577;1390</Position>
+                          <StyleLien>2</StyleLien>
+                          <PreAssertion>letPresente</PreAssertion>
+                          <PostAssertion>[letPresente]</PostAssertion>
+                          <Titre>Effectuer la
+recherche</Titre>
+                          <DetailsVisible>1</DetailsVisible>
+                          <DetailsVideVisible>1</DetailsVideVisible>
+                          <Enfants>
+                            <Iteration>
+                              <Position>2703.5;1510.5</Position>
+                              <StyleLien>1</StyleLien>
+                              <Titre>posCourante de 0 à taille de motADeviner</Titre>
+                              <IterationFixe>1</IterationFixe>
+                              <Enfants>
+                                <Action>
+                                  <Position>2561;1640</Position>
+                                  <StyleLien>2</StyleLien>
+                                  <PreAssertion>?</PreAssertion>
+                                  <PostAssertion>?</PostAssertion>
+                                  <Titre>Vérifier si on a trouvé ce
+qu'on cherche</Titre>
+                                  <DetailsVisible>1</DetailsVisible>
+                                  <DetailsVideVisible>0</DetailsVideVisible>
+                                  <Enfants>
+                                    <Condition>
+                                      <Position>2540;1762</Position>
+                                      <StyleLien>1</StyleLien>
+                                      <estUnique>1</estUnique>
+                                      <operationsLogiques>
+                                        <operation>
+                                          <Titre>motADeviner[posCourante] = lettreSaisie</Titre>
+                                          <Enfants>
+                                            <Action>
+                                              <Position>2403;1844</Position>
+                                              <StyleLien>1</StyleLien>
+                                              <PreAssertion>?</PreAssertion>
+                                              <PostAssertion>letPresente</PostAssertion>
+                                              <Titre>letPresente = True</Titre>
+                                              <DetailsVisible>1</DetailsVisible>
+                                              <DetailsVideVisible>0</DetailsVideVisible>
+                                              <Enfants/>
+                                            </Action>
+                                            <Action>
+                                              <Position>2638;1844</Position>
+                                              <StyleLien>1</StyleLien>
+                                              <PreAssertion>?</PreAssertion>
+                                              <PostAssertion>letTrouvees</PostAssertion>
+                                              <Titre>letTrouvees[posCourante] = True</Titre>
+                                              <DetailsVisible>1</DetailsVisible>
+                                              <DetailsVideVisible>0</DetailsVideVisible>
+                                              <Enfants/>
+                                            </Action>
+                                          </Enfants>
+                                        </operation>
+                                        <operation>
+                                          <Titre>Sinon</Titre>
+                                          <Enfants/>
+                                        </operation>
+                                      </operationsLogiques>
+                                    </Condition>
+                                  </Enfants>
+                                </Action>
+                              </Enfants>
+                            </Iteration>
+                          </Enfants>
+                        </Action>
+                      </Enfants>
+                    </Action>
+                    <Action>
+                      <Position>2960;1253</Position>
+                      <StyleLien>2</StyleLien>
+                      <PreAssertion>letPresente, tentRestantes</PreAssertion>
+                      <PostAssertion>tentRestantes</PostAssertion>
+                      <Titre>Décrémenter les
+tentatives</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>1</DetailsVideVisible>
+                      <Enfants>
+                        <Condition>
+                          <Position>3125;1379</Position>
+                          <StyleLien>1</StyleLien>
+                          <estUnique>1</estUnique>
+                          <operationsLogiques>
+                            <operation>
+                              <Titre>letPresente = False</Titre>
+                              <Enfants>
+                                <Action>
+                                  <Position>2976;1524</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <PreAssertion>tentRestantes</PreAssertion>
+                                  <PostAssertion>tentRestantes</PostAssertion>
+                                  <Titre>tentRestantes ← tentRestantes - 1</Titre>
+                                  <DetailsVisible>1</DetailsVisible>
+                                  <DetailsVideVisible>1</DetailsVideVisible>
+                                  <Enfants/>
+                                </Action>
+                              </Enfants>
+                            </operation>
+                            <operation>
+                              <Titre>Sinon</Titre>
+                              <Enfants/>
+                            </operation>
+                          </operationsLogiques>
+                        </Condition>
+                      </Enfants>
+                    </Action>
+                    <Action>
+                      <Position>1851;1258</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>lettreSaisie</PostAssertion>
+                      <Titre>Saisie d'une lettre</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                    <Action>
+                      <Position>4063;1241</Position>
+                      <StyleLien>2</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>Mettre à jour les éléments de l'affichage</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants>
+                        <Iteration>
+                          <Position>4509.5;1357.5</Position>
+                          <StyleLien>1</StyleLien>
+                          <Titre>pour etapeAffichage de 1 à 2</Titre>
+                          <IterationFixe>1</IterationFixe>
+                          <Enfants>
+                            <Action>
+                              <Position>4255;1483</Position>
+                              <StyleLien>2</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>vérifier si le joueur a perdu, sinon adapter l'affichage à la lettre qu'il a saisie</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>0</DetailsVideVisible>
+                              <Enfants>
+                                <Condition>
+                                  <Position>4260;1641</Position>
+                                  <StyleLien>0</StyleLien>
+                                  <estUnique>0</estUnique>
+                                  <operationsLogiques>
+                                    <operation>
+                                      <Titre>tentRestantes &lt;= 0</Titre>
+                                      <Enfants>
+                                        <Condition>
+                                          <Position>3992;1936</Position>
+                                          <StyleLien>0</StyleLien>
+                                          <estUnique>0</estUnique>
+                                          <operationsLogiques>
+                                            <operation>
+                                              <Titre>etapeAffichage = 1</Titre>
+                                              <Enfants>
+                                                <Action>
+                                                  <Position>3761;2100</Position>
+                                                  <StyleLien>2</StyleLien>
+                                                  <PreAssertion>?</PreAssertion>
+                                                  <PostAssertion>?</PostAssertion>
+                                                  <Titre>première étape de l'affichage</Titre>
+                                                  <DetailsVisible>0</DetailsVisible>
+                                                  <DetailsVideVisible>1</DetailsVideVisible>
+                                                  <Enfants>
+                                                    <Action>
+                                                      <Position>3534;2241</Position>
+                                                      <StyleLien>1</StyleLien>
+                                                      <PreAssertion>?</PreAssertion>
+                                                      <PostAssertion>?</PostAssertion>
+                                                      <Titre>Afficher que la lettre n'est pas présente</Titre>
+                                                      <DetailsVisible>0</DetailsVisible>
+                                                      <DetailsVideVisible>1</DetailsVideVisible>
+                                                      <Enfants/>
+                                                    </Action>
+                                                    <Action>
+                                                      <Position>3737;2241</Position>
+                                                      <StyleLien>1</StyleLien>
+                                                      <PreAssertion>?</PreAssertion>
+                                                      <PostAssertion>?</PostAssertion>
+                                                      <Titre>Afficher que les tentatives
+sont épuisées</Titre>
+                                                      <DetailsVisible>0</DetailsVisible>
+                                                      <DetailsVideVisible>1</DetailsVideVisible>
+                                                      <Enfants/>
+                                                    </Action>
+                                                    <Action>
+                                                      <Position>3892;2241</Position>
+                                                      <StyleLien>1</StyleLien>
+                                                      <PreAssertion>?</PreAssertion>
+                                                      <PostAssertion>?</PostAssertion>
+                                                      <Titre>pause de 2
+secondes</Titre>
+                                                      <DetailsVisible>0</DetailsVisible>
+                                                      <DetailsVideVisible>1</DetailsVideVisible>
+                                                      <Enfants/>
+                                                    </Action>
+                                                    <Action>
+                                                      <Position>3964;2241</Position>
+                                                      <StyleLien>1</StyleLien>
+                                                      <PreAssertion>?</PreAssertion>
+                                                      <PostAssertion>?</PostAssertion>
+                                                      <Titre>effacer le
+terminal</Titre>
+                                                      <DetailsVisible>0</DetailsVisible>
+                                                      <DetailsVideVisible>1</DetailsVideVisible>
+                                                      <Enfants/>
+                                                    </Action>
+                                                  </Enfants>
+                                                </Action>
+                                              </Enfants>
+                                            </operation>
+                                            <operation>
+                                              <Titre>Sinon</Titre>
+                                              <Enfants>
+                                                <Action>
+                                                  <Position>4214;2095</Position>
+                                                  <StyleLien>2</StyleLien>
+                                                  <PreAssertion>?</PreAssertion>
+                                                  <PostAssertion>?</PostAssertion>
+                                                  <Titre>deuxième étape de l'affichage</Titre>
+                                                  <DetailsVisible>0</DetailsVisible>
+                                                  <DetailsVideVisible>1</DetailsVideVisible>
+                                                  <Enfants>
+                                                    <Action>
+                                                      <Position>4156;2244</Position>
+                                                      <StyleLien>1</StyleLien>
+                                                      <PreAssertion>?</PreAssertion>
+                                                      <PostAssertion>?</PostAssertion>
+                                                      <Titre>Afficher message
+de défaite</Titre>
+                                                      <DetailsVisible>0</DetailsVisible>
+                                                      <DetailsVideVisible>1</DetailsVideVisible>
+                                                      <Enfants/>
+                                                    </Action>
+                                                    <Action>
+                                                      <Position>4266;2244</Position>
+                                                      <StyleLien>1</StyleLien>
+                                                      <PreAssertion>?</PreAssertion>
+                                                      <PostAssertion>finDePartie</PostAssertion>
+                                                      <Titre>finDePartie = True</Titre>
+                                                      <DetailsVisible>1</DetailsVisible>
+                                                      <DetailsVideVisible>0</DetailsVideVisible>
+                                                      <Enfants/>
+                                                    </Action>
+                                                  </Enfants>
+                                                </Action>
+                                              </Enfants>
+                                            </operation>
+                                          </operationsLogiques>
+                                        </Condition>
+                                      </Enfants>
+                                    </operation>
+                                    <operation>
+                                      <Titre>Sinon</Titre>
+                                      <Enfants>
+                                        <Condition>
+                                          <Position>5158;1729</Position>
+                                          <StyleLien>0</StyleLien>
+                                          <estUnique>0</estUnique>
+                                          <operationsLogiques>
+                                            <operation>
+                                              <Titre>letPresente = True &amp; dejaEssayee = True</Titre>
+                                              <Enfants>
+                                                <Condition>
+                                                  <Position>5152;1973</Position>
+                                                  <StyleLien>0</StyleLien>
+                                                  <estUnique>0</estUnique>
+                                                  <operationsLogiques>
+                                                    <operation>
+                                                      <Titre>etapeAffichage = 1</Titre>
+                                                      <Enfants>
+                                                        <Action>
+                                                          <Position>4897;2093</Position>
+                                                          <StyleLien>2</StyleLien>
+                                                          <PreAssertion>?</PreAssertion>
+                                                          <PostAssertion>?</PostAssertion>
+                                                          <Titre>première étape de l'affichage</Titre>
+                                                          <DetailsVisible>1</DetailsVisible>
+                                                          <DetailsVideVisible>0</DetailsVideVisible>
+                                                          <Enfants>
+                                                            <Action>
+                                                              <Position>4722;2207</Position>
+                                                              <StyleLien>1</StyleLien>
+                                                              <PreAssertion>letPresente</PreAssertion>
+                                                              <PostAssertion>?</PostAssertion>
+                                                              <Titre>afficher que la lettre 
+est présente</Titre>
+                                                              <DetailsVisible>0</DetailsVisible>
+                                                              <DetailsVideVisible>0</DetailsVideVisible>
+                                                              <Enfants/>
+                                                            </Action>
+                                                            <Action>
+                                                              <Position>4876;2207</Position>
+                                                              <StyleLien>1</StyleLien>
+                                                              <PreAssertion>dejaEssayee</PreAssertion>
+                                                              <PostAssertion>?</PostAssertion>
+                                                              <Titre>afficher que la lettre
+a déjà été essayée</Titre>
+                                                              <DetailsVisible>1</DetailsVisible>
+                                                              <DetailsVideVisible>0</DetailsVideVisible>
+                                                              <Enfants/>
+                                                            </Action>
+                                                            <Action>
+                                                              <Position>5110;2207</Position>
+                                                              <StyleLien>1</StyleLien>
+                                                              <PreAssertion>?</PreAssertion>
+                                                              <PostAssertion>?</PostAssertion>
+                                                              <Titre>pause de 2
+secondes</Titre>
+                                                              <DetailsVisible>1</DetailsVisible>
+                                                              <DetailsVideVisible>0</DetailsVideVisible>
+                                                              <Enfants/>
+                                                            </Action>
+                                                            <Action>
+                                                              <Position>5182;2207</Position>
+                                                              <StyleLien>1</StyleLien>
+                                                              <PreAssertion>?</PreAssertion>
+                                                              <PostAssertion>?</PostAssertion>
+                                                              <Titre>effacer le terminal</Titre>
+                                                              <DetailsVisible>1</DetailsVisible>
+                                                              <DetailsVideVisible>0</DetailsVideVisible>
+                                                              <Enfants/>
+                                                            </Action>
+                                                          </Enfants>
+                                                        </Action>
+                                                      </Enfants>
+                                                    </operation>
+                                                    <operation>
+                                                      <Titre>Sinon</Titre>
+                                                      <Enfants>
+                                                        <Action>
+                                                          <Position>5392;2214</Position>
+                                                          <StyleLien>2</StyleLien>
+                                                          <PreAssertion>?</PreAssertion>
+                                                          <PostAssertion>?</PostAssertion>
+                                                          <Titre>deuxième étape de l'affichage</Titre>
+                                                          <DetailsVisible>1</DetailsVisible>
+                                                          <DetailsVideVisible>0</DetailsVideVisible>
+                                                          <Enfants>
+                                                            <Action>
+                                                              <Position>4753;2342</Position>
+                                                              <StyleLien>1</StyleLien>
+                                                              <PreAssertion>baseEcran</PreAssertion>
+                                                              <PostAssertion>?</PostAssertion>
+                                                              <Titre>afficher baseEcran</Titre>
+                                                              <DetailsVisible>1</DetailsVisible>
+                                                              <DetailsVideVisible>0</DetailsVideVisible>
+                                                              <Enfants/>
+                                                            </Action>
+                                                            <Action>
+                                                              <Position>5361;2347</Position>
+                                                              <StyleLien>2</StyleLien>
+                                                              <PreAssertion>tentRestantes</PreAssertion>
+                                                              <PostAssertion>?</PostAssertion>
+                                                              <Titre>afficher tentRestantes</Titre>
+                                                              <DetailsVisible>1</DetailsVisible>
+                                                              <DetailsVideVisible>0</DetailsVideVisible>
+                                                              <Enfants>
+                                                                <Condition>
+                                                                  <Position>5371;2452</Position>
+                                                                  <StyleLien>0</StyleLien>
+                                                                  <estUnique>0</estUnique>
+                                                                  <operationsLogiques>
+                                                                    <operation>
+                                                                      <Titre>tentRestantes &lt; 4</Titre>
+                                                                      <Enfants>
+                                                                        <Action>
+                                                                          <Position>5335;2549</Position>
+                                                                          <StyleLien>1</StyleLien>
+                                                                          <PreAssertion>?</PreAssertion>
+                                                                          <PostAssertion>?</PostAssertion>
+                                                                          <Titre>Afficher en violet</Titre>
+                                                                          <DetailsVisible>1</DetailsVisible>
+                                                                          <DetailsVideVisible>0</DetailsVideVisible>
+                                                                          <Enfants/>
+                                                                        </Action>
+                                                                      </Enfants>
+                                                                    </operation>
+                                                                    <operation>
+                                                                      <Titre>tentRestantes &lt; 2</Titre>
+                                                                      <Enfants>
+                                                                        <Action>
+                                                                          <Position>5473;2547</Position>
+                                                                          <StyleLien>1</StyleLien>
+                                                                          <PreAssertion>?</PreAssertion>
+                                                                          <PostAssertion>?</PostAssertion>
+                                                                          <Titre>Afficher en rouge</Titre>
+                                                                          <DetailsVisible>1</DetailsVisible>
+                                                                          <DetailsVideVisible>0</DetailsVideVisible>
+                                                                          <Enfants/>
+                                                                        </Action>
+                                                                      </Enfants>
+                                                                    </operation>
+                                                                    <operation>
+                                                                      <Titre>Sinon</Titre>
+                                                                      <Enfants>
+                                                                        <Action>
+                                                                          <Position>5611;2548</Position>
+                                                                          <StyleLien>1</StyleLien>
+                                                                          <PreAssertion>?</PreAssertion>
+                                                                          <PostAssertion>?</PostAssertion>
+                                                                          <Titre>Afficher en vert</Titre>
+                                                                          <DetailsVisible>1</DetailsVisible>
+                                                                          <DetailsVideVisible>0</DetailsVideVisible>
+                                                                          <Enfants/>
+                                                                        </Action>
+                                                                      </Enfants>
+                                                                    </operation>
+                                                                  </operationsLogiques>
+                                                                </Condition>
+                                                              </Enfants>
+                                                            </Action>
+                                                            <Action>
+                                                              <Position>5044;2349</Position>
+                                                              <StyleLien>2</StyleLien>
+                                                              <PreAssertion>?</PreAssertion>
+                                                              <PostAssertion>?</PostAssertion>
+                                                              <Titre>Afficher le mot à deviner
+sans les lettres pas
+ encore essayées</Titre>
+                                                              <DetailsVisible>1</DetailsVisible>
+                                                              <DetailsVideVisible>0</DetailsVideVisible>
+                                                              <Enfants>
+                                                                <Iteration>
+                                                                  <Position>5101.5;2445.5</Position>
+                                                                  <StyleLien>1</StyleLien>
+                                                                  <Titre>indicePosition de 0 à taille motADeviner</Titre>
+                                                                  <IterationFixe>1</IterationFixe>
+                                                                  <Enfants>
+                                                                    <Condition>
+                                                                      <Position>4959;2549</Position>
+                                                                      <StyleLien>0</StyleLien>
+                                                                      <estUnique>0</estUnique>
+                                                                      <operationsLogiques>
+                                                                        <operation>
+                                                                          <Titre>letTrouvees[indicePosition] = True</Titre>
+                                                                          <Enfants>
+                                                                            <Action>
+                                                                              <Position>4709;2628</Position>
+                                                                              <StyleLien>1</StyleLien>
+                                                                              <PreAssertion>motADeviner, indicePosition</PreAssertion>
+                                                                              <PostAssertion>?</PostAssertion>
+                                                                              <Titre>afficher motADeviner[indiceposition]</Titre>
+                                                                              <DetailsVisible>1</DetailsVisible>
+                                                                              <DetailsVideVisible>0</DetailsVideVisible>
+                                                                              <Enfants/>
+                                                                            </Action>
+                                                                          </Enfants>
+                                                                        </operation>
+                                                                        <operation>
+                                                                          <Titre>Sinon</Titre>
+                                                                          <Enfants>
+                                                                            <Action>
+                                                                              <Position>5148;2627</Position>
+                                                                              <StyleLien>1</StyleLien>
+                                                                              <PreAssertion>?</PreAssertion>
+                                                                              <PostAssertion>?</PostAssertion>
+                                                                              <Titre>afficher "-"</Titre>
+                                                                              <DetailsVisible>1</DetailsVisible>
+                                                                              <DetailsVideVisible>0</DetailsVideVisible>
+                                                                              <Enfants/>
+                                                                            </Action>
+                                                                          </Enfants>
+                                                                        </operation>
+                                                                      </operationsLogiques>
+                                                                    </Condition>
+                                                                  </Enfants>
+                                                                </Iteration>
+                                                              </Enfants>
+                                                            </Action>
+                                                          </Enfants>
+                                                        </Action>
+                                                      </Enfants>
+                                                    </operation>
+                                                  </operationsLogiques>
+                                                </Condition>
+                                              </Enfants>
+                                            </operation>
+                                            <operation>
+                                              <Titre>letPresente = True &amp; dejaEssayee = False</Titre>
+                                              <Enfants>
+                                                <Condition>
+                                                  <Position>5836;2012</Position>
+                                                  <StyleLien>0</StyleLien>
+                                                  <estUnique>0</estUnique>
+                                                  <operationsLogiques>
+                                                    <operation>
+                                                      <Titre>etapeAffichage = 1</Titre>
+                                                      <Enfants>
+                                                        <Action>
+                                                          <Position>5773;2112</Position>
+                                                          <StyleLien>2</StyleLien>
+                                                          <PreAssertion>?</PreAssertion>
+                                                          <PostAssertion>?</PostAssertion>
+                                                          <Titre>première étape de l'affichage</Titre>
+                                                          <DetailsVisible>1</DetailsVisible>
+                                                          <DetailsVideVisible>0</DetailsVideVisible>
+                                                          <Enfants>
+                                                            <Action>
+                                                              <Position>5687;2213</Position>
+                                                              <StyleLien>1</StyleLien>
+                                                              <PreAssertion>letPresente</PreAssertion>
+                                                              <PostAssertion>?</PostAssertion>
+                                                              <Titre>afficher que la lettre 
+est présente</Titre>
+                                                              <DetailsVisible>0</DetailsVisible>
+                                                              <DetailsVideVisible>0</DetailsVideVisible>
+                                                              <Enfants/>
+                                                            </Action>
+                                                            <Action>
+                                                              <Position>5822;2212</Position>
+                                                              <StyleLien>1</StyleLien>
+                                                              <PreAssertion>?</PreAssertion>
+                                                              <PostAssertion>?</PostAssertion>
+                                                              <Titre>pause de 2
+secondes</Titre>
+                                                              <DetailsVisible>1</DetailsVisible>
+                                                              <DetailsVideVisible>0</DetailsVideVisible>
+                                                              <Enfants/>
+                                                            </Action>
+                                                            <Action>
+                                                              <Position>5894;2212</Position>
+                                                              <StyleLien>1</StyleLien>
+                                                              <PreAssertion>?</PreAssertion>
+                                                              <PostAssertion>?</PostAssertion>
+                                                              <Titre>effacer le terminal</Titre>
+                                                              <DetailsVisible>1</DetailsVisible>
+                                                              <DetailsVideVisible>0</DetailsVideVisible>
+                                                              <Enfants/>
+                                                            </Action>
+                                                          </Enfants>
+                                                        </Action>
+                                                      </Enfants>
+                                                    </operation>
+                                                    <operation>
+                                                      <Titre>Sinon</Titre>
+                                                      <Enfants>
+                                                        <Action>
+                                                          <Position>6061;2222</Position>
+                                                          <StyleLien>2</StyleLien>
+                                                          <PreAssertion>?</PreAssertion>
+                                                          <PostAssertion>?</PostAssertion>
+                                                          <Titre>deuxième étape de l'affichage</Titre>
+                                                          <DetailsVisible>1</DetailsVisible>
+                                                          <DetailsVideVisible>0</DetailsVideVisible>
+                                                          <Enfants>
+                                                            <Action>
+                                                              <Position>5807;2344</Position>
+                                                              <StyleLien>1</StyleLien>
+                                                              <PreAssertion>baseEcran</PreAssertion>
+                                                              <PostAssertion>?</PostAssertion>
+                                                              <Titre>afficher baseEcran</Titre>
+                                                              <DetailsVisible>1</DetailsVisible>
+                                                              <DetailsVideVisible>0</DetailsVideVisible>
+                                                              <Enfants/>
+                                                            </Action>
+                                                            <Action>
+                                                              <Position>6408;2344</Position>
+                                                              <StyleLien>2</StyleLien>
+                                                              <PreAssertion>tentRestantes</PreAssertion>
+                                                              <PostAssertion>?</PostAssertion>
+                                                              <Titre>afficher tentRestantes</Titre>
+                                                              <DetailsVisible>1</DetailsVisible>
+                                                              <DetailsVideVisible>0</DetailsVideVisible>
+                                                              <Enfants>
+                                                                <Condition>
+                                                                  <Position>6442;2455</Position>
+                                                                  <StyleLien>0</StyleLien>
+                                                                  <estUnique>0</estUnique>
+                                                                  <operationsLogiques>
+                                                                    <operation>
+                                                                      <Titre>tentRestantes &lt; 4</Titre>
+                                                                      <Enfants>
+                                                                        <Action>
+                                                                          <Position>6423;2556</Position>
+                                                                          <StyleLien>1</StyleLien>
+                                                                          <PreAssertion>?</PreAssertion>
+                                                                          <PostAssertion>?</PostAssertion>
+                                                                          <Titre>Afficher en violet</Titre>
+                                                                          <DetailsVisible>1</DetailsVisible>
+                                                                          <DetailsVideVisible>0</DetailsVideVisible>
+                                                                          <Enfants/>
+                                                                        </Action>
+                                                                      </Enfants>
+                                                                    </operation>
+                                                                    <operation>
+                                                                      <Titre>tentRestantes &lt; 2</Titre>
+                                                                      <Enfants>
+                                                                        <Action>
+                                                                          <Position>6561;2554</Position>
+                                                                          <StyleLien>1</StyleLien>
+                                                                          <PreAssertion>?</PreAssertion>
+                                                                          <PostAssertion>?</PostAssertion>
+                                                                          <Titre>Afficher en rouge</Titre>
+                                                                          <DetailsVisible>1</DetailsVisible>
+                                                                          <DetailsVideVisible>0</DetailsVideVisible>
+                                                                          <Enfants/>
+                                                                        </Action>
+                                                                      </Enfants>
+                                                                    </operation>
+                                                                    <operation>
+                                                                      <Titre>Sinon</Titre>
+                                                                      <Enfants>
+                                                                        <Action>
+                                                                          <Position>6699;2555</Position>
+                                                                          <StyleLien>1</StyleLien>
+                                                                          <PreAssertion>?</PreAssertion>
+                                                                          <PostAssertion>?</PostAssertion>
+                                                                          <Titre>Afficher en vert</Titre>
+                                                                          <DetailsVisible>1</DetailsVisible>
+                                                                          <DetailsVideVisible>0</DetailsVideVisible>
+                                                                          <Enfants/>
+                                                                        </Action>
+                                                                      </Enfants>
+                                                                    </operation>
+                                                                  </operationsLogiques>
+                                                                </Condition>
+                                                              </Enfants>
+                                                            </Action>
+                                                            <Action>
+                                                              <Position>6127;2341</Position>
+                                                              <StyleLien>2</StyleLien>
+                                                              <PreAssertion>?</PreAssertion>
+                                                              <PostAssertion>?</PostAssertion>
+                                                              <Titre>Afficher le mot à deviner
+sans les lettres pas
+ encore essayées</Titre>
+                                                              <DetailsVisible>1</DetailsVisible>
+                                                              <DetailsVideVisible>0</DetailsVideVisible>
+                                                              <Enfants>
+                                                                <Iteration>
+                                                                  <Position>6184.5;2437.5</Position>
+                                                                  <StyleLien>1</StyleLien>
+                                                                  <Titre>indicePosition de 0 à taille motADeviner</Titre>
+                                                                  <IterationFixe>1</IterationFixe>
+                                                                  <Enfants>
+                                                                    <Condition>
+                                                                      <Position>6042;2541</Position>
+                                                                      <StyleLien>0</StyleLien>
+                                                                      <estUnique>0</estUnique>
+                                                                      <operationsLogiques>
+                                                                        <operation>
+                                                                          <Titre>letTrouvees[indicePosition] = True</Titre>
+                                                                          <Enfants>
+                                                                            <Action>
+                                                                              <Position>5792;2620</Position>
+                                                                              <StyleLien>1</StyleLien>
+                                                                              <PreAssertion>motADeviner, indicePosition</PreAssertion>
+                                                                              <PostAssertion>?</PostAssertion>
+                                                                              <Titre>afficher motADeviner[indiceposition]</Titre>
+                                                                              <DetailsVisible>1</DetailsVisible>
+                                                                              <DetailsVideVisible>0</DetailsVideVisible>
+                                                                              <Enfants/>
+                                                                            </Action>
+                                                                          </Enfants>
+                                                                        </operation>
+                                                                        <operation>
+                                                                          <Titre>Sinon</Titre>
+                                                                          <Enfants>
+                                                                            <Action>
+                                                                              <Position>6231;2619</Position>
+                                                                              <StyleLien>1</StyleLien>
+                                                                              <PreAssertion>?</PreAssertion>
+                                                                              <PostAssertion>?</PostAssertion>
+                                                                              <Titre>afficher "-"</Titre>
+                                                                              <DetailsVisible>1</DetailsVisible>
+                                                                              <DetailsVideVisible>0</DetailsVideVisible>
+                                                                              <Enfants/>
+                                                                            </Action>
+                                                                          </Enfants>
+                                                                        </operation>
+                                                                      </operationsLogiques>
+                                                                    </Condition>
+                                                                  </Enfants>
+                                                                </Iteration>
+                                                              </Enfants>
+                                                            </Action>
+                                                          </Enfants>
+                                                        </Action>
+                                                      </Enfants>
+                                                    </operation>
+                                                  </operationsLogiques>
+                                                </Condition>
+                                              </Enfants>
+                                            </operation>
+                                            <operation>
+                                              <Titre>letPresente = False &amp; dejaEssayee = True</Titre>
+                                              <Enfants>
+                                                <Condition>
+                                                  <Position>6792;2017</Position>
+                                                  <StyleLien>0</StyleLien>
+                                                  <estUnique>0</estUnique>
+                                                  <operationsLogiques>
+                                                    <operation>
+                                                      <Titre>etapeAffichage = 1</Titre>
+                                                      <Enfants>
+                                                        <Action>
+                                                          <Position>6519;2106</Position>
+                                                          <StyleLien>2</StyleLien>
+                                                          <PreAssertion>?</PreAssertion>
+                                                          <PostAssertion>?</PostAssertion>
+                                                          <Titre>première étape de l'affichage</Titre>
+                                                          <DetailsVisible>1</DetailsVisible>
+                                                          <DetailsVideVisible>0</DetailsVideVisible>
+                                                          <Enfants>
+                                                            <Action>
+                                                              <Position>6498;2220</Position>
+                                                              <StyleLien>1</StyleLien>
+                                                              <PreAssertion>dejaEssayee</PreAssertion>
+                                                              <PostAssertion>?</PostAssertion>
+                                                              <Titre>afficher que la lettre
+a déjà été essayée</Titre>
+                                                              <DetailsVisible>1</DetailsVisible>
+                                                              <DetailsVideVisible>0</DetailsVideVisible>
+                                                              <Enfants/>
+                                                            </Action>
+                                                            <Action>
+                                                              <Position>6732;2220</Position>
+                                                              <StyleLien>1</StyleLien>
+                                                              <PreAssertion>?</PreAssertion>
+                                                              <PostAssertion>?</PostAssertion>
+                                                              <Titre>pause de 2
+secondes</Titre>
+                                                              <DetailsVisible>1</DetailsVisible>
+                                                              <DetailsVideVisible>0</DetailsVideVisible>
+                                                              <Enfants/>
+                                                            </Action>
+                                                            <Action>
+                                                              <Position>6804;2220</Position>
+                                                              <StyleLien>1</StyleLien>
+                                                              <PreAssertion>?</PreAssertion>
+                                                              <PostAssertion>?</PostAssertion>
+                                                              <Titre>effacer le terminal</Titre>
+                                                              <DetailsVisible>1</DetailsVisible>
+                                                              <DetailsVideVisible>0</DetailsVideVisible>
+                                                              <Enfants/>
+                                                            </Action>
+                                                            <Action>
+                                                              <Position>6350;2220</Position>
+                                                              <StyleLien>1</StyleLien>
+                                                              <PreAssertion>?</PreAssertion>
+                                                              <PostAssertion>?</PostAssertion>
+                                                              <Titre>Afficher que la lettre
+n'est pas présente</Titre>
+                                                              <DetailsVisible>0</DetailsVisible>
+                                                              <DetailsVideVisible>1</DetailsVideVisible>
+                                                              <Enfants/>
+                                                            </Action>
+                                                          </Enfants>
+                                                        </Action>
+                                                      </Enfants>
+                                                    </operation>
+                                                    <operation>
+                                                      <Titre>Sinon</Titre>
+                                                      <Enfants>
+                                                        <Action>
+                                                          <Position>6971;2214</Position>
+                                                          <StyleLien>2</StyleLien>
+                                                          <PreAssertion>?</PreAssertion>
+                                                          <PostAssertion>?</PostAssertion>
+                                                          <Titre>deuxième étape de l'affichage</Titre>
+                                                          <DetailsVisible>1</DetailsVisible>
+                                                          <DetailsVideVisible>0</DetailsVideVisible>
+                                                          <Enfants>
+                                                            <Action>
+                                                              <Position>6708;2339</Position>
+                                                              <StyleLien>1</StyleLien>
+                                                              <PreAssertion>baseEcran</PreAssertion>
+                                                              <PostAssertion>?</PostAssertion>
+                                                              <Titre>afficher baseEcran</Titre>
+                                                              <DetailsVisible>1</DetailsVisible>
+                                                              <DetailsVideVisible>0</DetailsVideVisible>
+                                                              <Enfants/>
+                                                            </Action>
+                                                            <Action>
+                                                              <Position>7182;2339</Position>
+                                                              <StyleLien>2</StyleLien>
+                                                              <PreAssertion>tentRestantes</PreAssertion>
+                                                              <PostAssertion>?</PostAssertion>
+                                                              <Titre>afficher tentRestantes</Titre>
+                                                              <DetailsVisible>1</DetailsVisible>
+                                                              <DetailsVideVisible>0</DetailsVideVisible>
+                                                              <Enfants>
+                                                                <Condition>
+                                                                  <Position>7218;2440</Position>
+                                                                  <StyleLien>0</StyleLien>
+                                                                  <estUnique>0</estUnique>
+                                                                  <operationsLogiques>
+                                                                    <operation>
+                                                                      <Titre>tentRestantes &lt; 4</Titre>
+                                                                      <Enfants>
+                                                                        <Action>
+                                                                          <Position>7195;2554</Position>
+                                                                          <StyleLien>1</StyleLien>
+                                                                          <PreAssertion>?</PreAssertion>
+                                                                          <PostAssertion>?</PostAssertion>
+                                                                          <Titre>Afficher en violet</Titre>
+                                                                          <DetailsVisible>1</DetailsVisible>
+                                                                          <DetailsVideVisible>0</DetailsVideVisible>
+                                                                          <Enfants/>
+                                                                        </Action>
+                                                                      </Enfants>
+                                                                    </operation>
+                                                                    <operation>
+                                                                      <Titre>tentRestantes &lt; 2</Titre>
+                                                                      <Enfants>
+                                                                        <Action>
+                                                                          <Position>7320;2553</Position>
+                                                                          <StyleLien>1</StyleLien>
+                                                                          <PreAssertion>?</PreAssertion>
+                                                                          <PostAssertion>?</PostAssertion>
+                                                                          <Titre>Afficher en rouge</Titre>
+                                                                          <DetailsVisible>1</DetailsVisible>
+                                                                          <DetailsVideVisible>0</DetailsVideVisible>
+                                                                          <Enfants/>
+                                                                        </Action>
+                                                                      </Enfants>
+                                                                    </operation>
+                                                                    <operation>
+                                                                      <Titre>Sinon</Titre>
+                                                                      <Enfants>
+                                                                        <Action>
+                                                                          <Position>7458;2554</Position>
+                                                                          <StyleLien>1</StyleLien>
+                                                                          <PreAssertion>?</PreAssertion>
+                                                                          <PostAssertion>?</PostAssertion>
+                                                                          <Titre>Afficher en vert</Titre>
+                                                                          <DetailsVisible>1</DetailsVisible>
+                                                                          <DetailsVideVisible>0</DetailsVideVisible>
+                                                                          <Enfants/>
+                                                                        </Action>
+                                                                      </Enfants>
+                                                                    </operation>
+                                                                  </operationsLogiques>
+                                                                </Condition>
+                                                              </Enfants>
+                                                            </Action>
+                                                            <Action>
+                                                              <Position>6967;2340</Position>
+                                                              <StyleLien>2</StyleLien>
+                                                              <PreAssertion>?</PreAssertion>
+                                                              <PostAssertion>?</PostAssertion>
+                                                              <Titre>Afficher le mot à deviner
+sans les lettres pas
+ encore essayées</Titre>
+                                                              <DetailsVisible>1</DetailsVisible>
+                                                              <DetailsVideVisible>0</DetailsVideVisible>
+                                                              <Enfants>
+                                                                <Iteration>
+                                                                  <Position>6940.5;2444.5</Position>
+                                                                  <StyleLien>1</StyleLien>
+                                                                  <Titre>indicePosition de 0 à taille motADeviner</Titre>
+                                                                  <IterationFixe>1</IterationFixe>
+                                                                  <Enfants>
+                                                                    <Condition>
+                                                                      <Position>6897;2563</Position>
+                                                                      <StyleLien>0</StyleLien>
+                                                                      <estUnique>0</estUnique>
+                                                                      <operationsLogiques>
+                                                                        <operation>
+                                                                          <Titre>letTrouvees[indicePosition] = True</Titre>
+                                                                          <Enfants>
+                                                                            <Action>
+                                                                              <Position>6647;2642</Position>
+                                                                              <StyleLien>1</StyleLien>
+                                                                              <PreAssertion>motADeviner, indicePosition</PreAssertion>
+                                                                              <PostAssertion>?</PostAssertion>
+                                                                              <Titre>afficher motADeviner[indiceposition]</Titre>
+                                                                              <DetailsVisible>1</DetailsVisible>
+                                                                              <DetailsVideVisible>0</DetailsVideVisible>
+                                                                              <Enfants/>
+                                                                            </Action>
+                                                                          </Enfants>
+                                                                        </operation>
+                                                                        <operation>
+                                                                          <Titre>Sinon</Titre>
+                                                                          <Enfants>
+                                                                            <Action>
+                                                                              <Position>7086;2641</Position>
+                                                                              <StyleLien>1</StyleLien>
+                                                                              <PreAssertion>?</PreAssertion>
+                                                                              <PostAssertion>?</PostAssertion>
+                                                                              <Titre>afficher "-"</Titre>
+                                                                              <DetailsVisible>1</DetailsVisible>
+                                                                              <DetailsVideVisible>0</DetailsVideVisible>
+                                                                              <Enfants/>
+                                                                            </Action>
+                                                                          </Enfants>
+                                                                        </operation>
+                                                                      </operationsLogiques>
+                                                                    </Condition>
+                                                                  </Enfants>
+                                                                </Iteration>
+                                                              </Enfants>
+                                                            </Action>
+                                                          </Enfants>
+                                                        </Action>
+                                                      </Enfants>
+                                                    </operation>
+                                                  </operationsLogiques>
+                                                </Condition>
+                                              </Enfants>
+                                            </operation>
+                                            <operation>
+                                              <Titre>Sinon</Titre>
+                                              <Enfants>
+                                                <Condition>
+                                                  <Position>7522;1972</Position>
+                                                  <StyleLien>0</StyleLien>
+                                                  <estUnique>0</estUnique>
+                                                  <operationsLogiques>
+                                                    <operation>
+                                                      <Titre>etapeAffichage = 1</Titre>
+                                                      <Enfants>
+                                                        <Action>
+                                                          <Position>7420;2081</Position>
+                                                          <StyleLien>2</StyleLien>
+                                                          <PreAssertion>?</PreAssertion>
+                                                          <PostAssertion>?</PostAssertion>
+                                                          <Titre>première étape de l'affichage</Titre>
+                                                          <DetailsVisible>1</DetailsVisible>
+                                                          <DetailsVideVisible>0</DetailsVideVisible>
+                                                          <Enfants>
+                                                            <Action>
+                                                              <Position>7361;2208</Position>
+                                                              <StyleLien>1</StyleLien>
+                                                              <PreAssertion>?</PreAssertion>
+                                                              <PostAssertion>?</PostAssertion>
+                                                              <Titre>pause de 2
+secondes</Titre>
+                                                              <DetailsVisible>1</DetailsVisible>
+                                                              <DetailsVideVisible>0</DetailsVideVisible>
+                                                              <Enfants/>
+                                                            </Action>
+                                                            <Action>
+                                                              <Position>7435;2208</Position>
+                                                              <StyleLien>1</StyleLien>
+                                                              <PreAssertion>?</PreAssertion>
+                                                              <PostAssertion>?</PostAssertion>
+                                                              <Titre>effacer le terminal</Titre>
+                                                              <DetailsVisible>1</DetailsVisible>
+                                                              <DetailsVideVisible>0</DetailsVideVisible>
+                                                              <Enfants/>
+                                                            </Action>
+                                                            <Action>
+                                                              <Position>7211;2208</Position>
+                                                              <StyleLien>1</StyleLien>
+                                                              <PreAssertion>?</PreAssertion>
+                                                              <PostAssertion>?</PostAssertion>
+                                                              <Titre>afficher que la lettre n'est
+pas présente</Titre>
+                                                              <DetailsVisible>0</DetailsVisible>
+                                                              <DetailsVideVisible>1</DetailsVideVisible>
+                                                              <Enfants/>
+                                                            </Action>
+                                                          </Enfants>
+                                                        </Action>
+                                                      </Enfants>
+                                                    </operation>
+                                                    <operation>
+                                                      <Titre>Sinon</Titre>
+                                                      <Enfants>
+                                                        <Action>
+                                                          <Position>7625;2205</Position>
+                                                          <StyleLien>2</StyleLien>
+                                                          <PreAssertion>?</PreAssertion>
+                                                          <PostAssertion>?</PostAssertion>
+                                                          <Titre>deuxième étape de l'affichage</Titre>
+                                                          <DetailsVisible>1</DetailsVisible>
+                                                          <DetailsVideVisible>0</DetailsVideVisible>
+                                                          <Enfants>
+                                                            <Action>
+                                                              <Position>7451;2337</Position>
+                                                              <StyleLien>1</StyleLien>
+                                                              <PreAssertion>baseEcran</PreAssertion>
+                                                              <PostAssertion>?</PostAssertion>
+                                                              <Titre>afficher baseEcran</Titre>
+                                                              <DetailsVisible>1</DetailsVisible>
+                                                              <DetailsVideVisible>0</DetailsVideVisible>
+                                                              <Enfants/>
+                                                            </Action>
+                                                            <Action>
+                                                              <Position>8015;2335</Position>
+                                                              <StyleLien>2</StyleLien>
+                                                              <PreAssertion>tentRestantes</PreAssertion>
+                                                              <PostAssertion>?</PostAssertion>
+                                                              <Titre>afficher tentRestantes</Titre>
+                                                              <DetailsVisible>1</DetailsVisible>
+                                                              <DetailsVideVisible>0</DetailsVideVisible>
+                                                              <Enfants>
+                                                                <Condition>
+                                                                  <Position>8035;2435</Position>
+                                                                  <StyleLien>0</StyleLien>
+                                                                  <estUnique>0</estUnique>
+                                                                  <operationsLogiques>
+                                                                    <operation>
+                                                                      <Titre>tentRestantes &lt; 4</Titre>
+                                                                      <Enfants>
+                                                                        <Action>
+                                                                          <Position>8023;2542</Position>
+                                                                          <StyleLien>1</StyleLien>
+                                                                          <PreAssertion>?</PreAssertion>
+                                                                          <PostAssertion>?</PostAssertion>
+                                                                          <Titre>Afficher en violet</Titre>
+                                                                          <DetailsVisible>1</DetailsVisible>
+                                                                          <DetailsVideVisible>0</DetailsVideVisible>
+                                                                          <Enfants/>
+                                                                        </Action>
+                                                                      </Enfants>
+                                                                    </operation>
+                                                                    <operation>
+                                                                      <Titre>tentRestantes &lt; 2</Titre>
+                                                                      <Enfants>
+                                                                        <Action>
+                                                                          <Position>8161;2540</Position>
+                                                                          <StyleLien>1</StyleLien>
+                                                                          <PreAssertion>?</PreAssertion>
+                                                                          <PostAssertion>?</PostAssertion>
+                                                                          <Titre>Afficher en rouge</Titre>
+                                                                          <DetailsVisible>1</DetailsVisible>
+                                                                          <DetailsVideVisible>0</DetailsVideVisible>
+                                                                          <Enfants/>
+                                                                        </Action>
+                                                                      </Enfants>
+                                                                    </operation>
+                                                                    <operation>
+                                                                      <Titre>Sinon</Titre>
+                                                                      <Enfants>
+                                                                        <Action>
+                                                                          <Position>8299;2541</Position>
+                                                                          <StyleLien>1</StyleLien>
+                                                                          <PreAssertion>?</PreAssertion>
+                                                                          <PostAssertion>?</PostAssertion>
+                                                                          <Titre>Afficher en vert</Titre>
+                                                                          <DetailsVisible>1</DetailsVisible>
+                                                                          <DetailsVideVisible>0</DetailsVideVisible>
+                                                                          <Enfants/>
+                                                                        </Action>
+                                                                      </Enfants>
+                                                                    </operation>
+                                                                  </operationsLogiques>
+                                                                </Condition>
+                                                              </Enfants>
+                                                            </Action>
+                                                            <Action>
+                                                              <Position>7732;2336</Position>
+                                                              <StyleLien>2</StyleLien>
+                                                              <PreAssertion>?</PreAssertion>
+                                                              <PostAssertion>?</PostAssertion>
+                                                              <Titre>Afficher le mot à deviner
+sans les lettres pas
+ encore essayées</Titre>
+                                                              <DetailsVisible>1</DetailsVisible>
+                                                              <DetailsVideVisible>0</DetailsVideVisible>
+                                                              <Enfants>
+                                                                <Iteration>
+                                                                  <Position>7696.5;2436.5</Position>
+                                                                  <StyleLien>1</StyleLien>
+                                                                  <Titre>indicePosition de 0 à taille motADeviner</Titre>
+                                                                  <IterationFixe>1</IterationFixe>
+                                                                  <Enfants>
+                                                                    <Condition>
+                                                                      <Position>7709;2559</Position>
+                                                                      <StyleLien>0</StyleLien>
+                                                                      <estUnique>0</estUnique>
+                                                                      <operationsLogiques>
+                                                                        <operation>
+                                                                          <Titre>letTrouvees[indicePosition] = True</Titre>
+                                                                          <Enfants>
+                                                                            <Action>
+                                                                              <Position>7413;2650</Position>
+                                                                              <StyleLien>1</StyleLien>
+                                                                              <PreAssertion>motADeviner, indicePosition</PreAssertion>
+                                                                              <PostAssertion>?</PostAssertion>
+                                                                              <Titre>afficher motADeviner[indiceposition]</Titre>
+                                                                              <DetailsVisible>1</DetailsVisible>
+                                                                              <DetailsVideVisible>0</DetailsVideVisible>
+                                                                              <Enfants/>
+                                                                            </Action>
+                                                                          </Enfants>
+                                                                        </operation>
+                                                                        <operation>
+                                                                          <Titre>Sinon</Titre>
+                                                                          <Enfants>
+                                                                            <Action>
+                                                                              <Position>7922;2650</Position>
+                                                                              <StyleLien>1</StyleLien>
+                                                                              <PreAssertion>?</PreAssertion>
+                                                                              <PostAssertion>?</PostAssertion>
+                                                                              <Titre>afficher "-"</Titre>
+                                                                              <DetailsVisible>1</DetailsVisible>
+                                                                              <DetailsVideVisible>0</DetailsVideVisible>
+                                                                              <Enfants/>
+                                                                            </Action>
+                                                                          </Enfants>
+                                                                        </operation>
+                                                                      </operationsLogiques>
+                                                                    </Condition>
+                                                                  </Enfants>
+                                                                </Iteration>
+                                                              </Enfants>
+                                                            </Action>
+                                                          </Enfants>
+                                                        </Action>
+                                                      </Enfants>
+                                                    </operation>
+                                                  </operationsLogiques>
+                                                </Condition>
+                                              </Enfants>
+                                            </operation>
+                                          </operationsLogiques>
+                                        </Condition>
+                                      </Enfants>
+                                    </operation>
+                                  </operationsLogiques>
+                                </Condition>
+                              </Enfants>
+                            </Action>
+                          </Enfants>
+                        </Iteration>
+                        <Action>
+                          <Position>3736;1482</Position>
+                          <StyleLien>2</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>finDePartie</PostAssertion>
+                          <Titre>vérifier si le
+joueur a gagné</Titre>
+                          <DetailsVisible>1</DetailsVisible>
+                          <DetailsVideVisible>0</DetailsVideVisible>
+                          <Enfants>
+                            <Iteration>
+                              <Position>3500.5;1620.5</Position>
+                              <StyleLien>1</StyleLien>
+                              <Titre>indiceLetTrouvees de 0 à taille de letTrouvees</Titre>
+                              <IterationFixe>1</IterationFixe>
+                              <Enfants>
+                                <Condition>
+                                  <Position>3456;1753</Position>
+                                  <StyleLien>0</StyleLien>
+                                  <estUnique>0</estUnique>
+                                  <operationsLogiques>
+                                    <operation>
+                                      <Titre>letTrouvees[indiceLetTrouvees] = True</Titre>
+                                      <Enfants>
+                                        <Condition>
+                                          <Position>3398;1843</Position>
+                                          <StyleLien>1</StyleLien>
+                                          <estUnique>0</estUnique>
+                                          <operationsLogiques>
+                                            <operation>
+                                              <Titre>indiceLetTrouvees >=
+taille letTrouvees</Titre>
+                                              <Enfants>
+                                                <Action>
+                                                  <Position>3250;1969</Position>
+                                                  <StyleLien>1</StyleLien>
+                                                  <PreAssertion>?</PreAssertion>
+                                                  <PostAssertion>?</PostAssertion>
+                                                  <Titre>Afficher message de Victoire</Titre>
+                                                  <DetailsVisible>1</DetailsVisible>
+                                                  <DetailsVideVisible>0</DetailsVideVisible>
+                                                  <Enfants/>
+                                                </Action>
+                                                <Action>
+                                                  <Position>3418;1969</Position>
+                                                  <StyleLien>1</StyleLien>
+                                                  <PreAssertion>?</PreAssertion>
+                                                  <PostAssertion>finDePartie</PostAssertion>
+                                                  <Titre>finDePartie = True</Titre>
+                                                  <DetailsVisible>1</DetailsVisible>
+                                                  <DetailsVideVisible>0</DetailsVideVisible>
+                                                  <Enfants/>
+                                                </Action>
+                                              </Enfants>
+                                            </operation>
+                                            <operation>
+                                              <Titre>Sinon</Titre>
+                                              <Enfants/>
+                                            </operation>
+                                          </operationsLogiques>
+                                        </Condition>
+                                      </Enfants>
+                                    </operation>
+                                    <operation>
+                                      <Titre>Sinon</Titre>
+                                      <Enfants>
+                                        <Sortie>
+                                          <Position>3701;1845</Position>
+                                        </Sortie>
+                                      </Enfants>
+                                    </operation>
+                                  </operationsLogiques>
+                                </Condition>
+                              </Enfants>
+                            </Iteration>
+                            <Condition>
+                              <Position>3914;1636</Position>
+                              <StyleLien>1</StyleLien>
+                              <estUnique>0</estUnique>
+                              <operationsLogiques>
+                                <operation>
+                                  <Titre>finDePartie =
+True</Titre>
+                                  <Enfants>
+                                    <Sortie>
+                                      <Position>3957;1730</Position>
+                                    </Sortie>
+                                  </Enfants>
+                                </operation>
+                                <operation>
+                                  <Titre>Sinon</Titre>
+                                  <Enfants/>
+                                </operation>
+                              </operationsLogiques>
+                            </Condition>
+                          </Enfants>
+                        </Action>
+                        <Condition>
+                          <Position>4897;1374</Position>
+                          <StyleLien>1</StyleLien>
+                          <estUnique>0</estUnique>
+                          <operationsLogiques>
+                            <operation>
+                              <Titre>finDePartie =
+True</Titre>
+                              <Enfants>
+                                <Sortie>
+                                  <Position>4940;1468</Position>
+                                </Sortie>
+                              </Enfants>
+                            </operation>
+                            <operation>
+                              <Titre>Sinon</Titre>
+                              <Enfants/>
+                            </operation>
+                          </operationsLogiques>
+                        </Condition>
+                      </Enfants>
+                    </Action>
+                    <Action>
+                      <Position>1636;1259</Position>
+                      <StyleLien>2</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>choisir un mot aléatoire dans le thème</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants>
+                        <Action>
+                          <Position>1360;1433</Position>
+                          <StyleLien>1</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>noMot</PostAssertion>
+                          <Titre>déterminer un entier
+aléatoire entre 0 et 5</Titre>
+                          <DetailsVisible>1</DetailsVisible>
+                          <DetailsVideVisible>0</DetailsVideVisible>
+                          <Enfants/>
+                        </Action>
+                        <Action>
+                          <Position>1596;1433</Position>
+                          <StyleLien>1</StyleLien>
+                          <PreAssertion>Themes, noTheme, noMot</PreAssertion>
+                          <PostAssertion>motADeviner</PostAssertion>
+                          <Titre>motADeviner =
+Themes[noTheme][noMot]</Titre>
+                          <DetailsVisible>1</DetailsVisible>
+                          <DetailsVideVisible>1</DetailsVideVisible>
+                          <Enfants/>
+                        </Action>
+                      </Enfants>
+                    </Action>
+                  </Enfants>
+                </Iteration>
+              </Enfants>
+            </Action>
+            <Action>
+              <Position>3305;762</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>Relancer une partie ou non</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants>
+                <Action>
+                  <Position>3203;885</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>rejouer</PostAssertion>
+                  <Titre>Saisie de rejouer</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+                <Condition>
+                  <Position>3418;892</Position>
+                  <StyleLien>1</StyleLien>
+                  <estUnique>0</estUnique>
+                  <operationsLogiques>
+                    <operation>
+                      <Titre>rejouer = oui</Titre>
+                      <Enfants>
+                        <Action>
+                          <Position>3295;1002</Position>
+                          <StyleLien>1</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>?</PostAssertion>
+                          <Titre>pause de
+2 secondes</Titre>
+                          <DetailsVisible>1</DetailsVisible>
+                          <DetailsVideVisible>0</DetailsVideVisible>
+                          <Enfants/>
+                        </Action>
+                        <Action>
+                          <Position>3369;1002</Position>
+                          <StyleLien>1</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>?</PostAssertion>
+                          <Titre>Effacer le
+terminal</Titre>
+                          <DetailsVisible>1</DetailsVisible>
+                          <DetailsVideVisible>0</DetailsVideVisible>
+                          <Enfants/>
+                        </Action>
+                      </Enfants>
+                    </operation>
+                    <operation>
+                      <Titre>Sinon</Titre>
+                      <Enfants>
+                        <Action>
+                          <Position>3554;997</Position>
+                          <StyleLien>1</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>?</PostAssertion>
+                          <Titre>pause de
+2 secondes</Titre>
+                          <DetailsVisible>1</DetailsVisible>
+                          <DetailsVideVisible>0</DetailsVideVisible>
+                          <Enfants/>
+                        </Action>
+                        <Sortie>
+                          <Position>3650;1006</Position>
+                        </Sortie>
+                      </Enfants>
+                    </operation>
+                  </operationsLogiques>
+                </Condition>
+              </Enfants>
+            </Action>
+            <Action>
+              <Position>2163;655</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>theme</PostAssertion>
+              <Titre>Choix du thème</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants>
+                <Action>
+                  <Position>1981;759</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>proposer les themes "1 : Informatique", "2 : Animaux", "3 : Aliments"</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+                <Action>
+                  <Position>2290;754</Position>
+                  <StyleLien>2</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>Le joueur choisit
+un theme</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants>
+                    <Iteration>
+                      <Position>2325.5;837.5</Position>
+                      <StyleLien>1</StyleLien>
+                      <Titre>?</Titre>
+                      <IterationFixe>0</IterationFixe>
+                      <Enfants>
+                        <Action>
+                          <Position>2110;937</Position>
+                          <StyleLien>1</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>noTheme</PostAssertion>
+                          <Titre>Saisie de noTheme</Titre>
+                          <DetailsVisible>1</DetailsVisible>
+                          <DetailsVideVisible>0</DetailsVideVisible>
+                          <Enfants/>
+                        </Action>
+                        <Condition>
+                          <Position>2396;944</Position>
+                          <StyleLien>1</StyleLien>
+                          <estUnique>0</estUnique>
+                          <operationsLogiques>
+                            <operation>
+                              <Titre>noTheme > 0 et
+noTheme &lt; 4</Titre>
+                              <Enfants>
+                                <Action>
+                                  <Position>2118;1076</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <PreAssertion>noTheme</PreAssertion>
+                                  <PostAssertion>noTheme</PostAssertion>
+                                  <Titre>noTheme = noTheme - 1</Titre>
+                                  <DetailsVisible>1</DetailsVisible>
+                                  <DetailsVideVisible>1</DetailsVideVisible>
+                                  <Enfants/>
+                                </Action>
+                                <Sortie>
+                                  <Position>2501;1088</Position>
+                                </Sortie>
+                              </Enfants>
+                            </operation>
+                            <operation>
+                              <Titre>Sinon</Titre>
+                              <Enfants/>
+                            </operation>
+                          </operationsLogiques>
+                        </Condition>
+                      </Enfants>
+                    </Iteration>
+                  </Enfants>
+                </Action>
+              </Enfants>
+            </Action>
+          </Enfants>
+        </Iteration>
+      </Enfants>
+    </Action>
+  </Elements>
+</Algorithme>

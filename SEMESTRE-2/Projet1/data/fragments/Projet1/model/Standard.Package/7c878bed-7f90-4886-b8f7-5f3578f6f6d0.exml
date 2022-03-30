@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="On est pas content" version="4">
+  <OBJECT>
+    <ID name="On est pas content" mc="Standard.Package" uid="7c878bed-7f90-4886-b8f7-5f3578f6f6d0"/>
+    <PID name="Projet1" mc="Standard.Project" uid="e06d8e09-4438-4951-9b03-02b1ae60940b"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[On est pas content]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Mme Voice" mc="Standard.Actor" uid="08222335-b9bc-4200-9171-f3f9735dd3dc"/>
+        <COMPID name="Demande des scénarii" mc="Standard.UseCase" uid="4711fa5a-c134-43aa-9507-7c374dd22a6d"/>
+        <COMPID name="Etudizant" mc="Standard.Actor" uid="9a006e78-65d8-44af-8c6e-58b9ac709238"/>
+        <COMPID name="On est pas content UwU" mc="Standard.UseCase" uid="441181f9-43d2-4383-8c2b-8f3e1fe2fef7"/>
+        <COMPID name="Adhérant" mc="Standard.Actor" uid="3b23ba52-29e7-4251-ad9f-d795d3a5b82a"/>
+        <COMPID name="Adhère" mc="Standard.UseCase" uid="89388edc-538b-4687-83ba-b3727ad7be72"/>
+        <COMPID name="les proffeseursz" mc="Standard.Actor" uid="80f95ca4-13d7-4a7b-8b26-96798221e2aa"/>
+        <COMPID name="Insulte les passant" mc="Standard.UseCase" uid="b9ab9088-028d-4d30-96f2-9dbdc60abdea"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Mme Voice" mc="Standard.UseCaseDiagram" uid="9e8bd3ad-c62b-4055-bab6-56b896bf7424"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

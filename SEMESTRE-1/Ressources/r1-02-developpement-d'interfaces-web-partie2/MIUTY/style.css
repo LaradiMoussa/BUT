@@ -1,0 +1,55 @@
+#smartphone
+{
+    position:fixed;
+    left : 40%;
+    height: 600px;
+    width: 20%;
+    border: 1px solid;
+    background-color: #404040;
+    color: #DADADA;
+}
+
+#titre
+{
+    text-align: center;
+}
+
+#retour
+{
+    position:absolute;
+    left: 5%;
+}
+
+#pp{
+    float: left;
+}
+
+#nom{
+    float: right;
+}
+
+#carreBio{
+    color: #888888;
+    width:70%;
+    border: 1px solid;
+}
+
+#rectangleMDP{
+    color: #888888;
+    width:70%;
+    border: 1px solid;
+}
+
+header{
+    color: #FFBA01;
+}
+
+section{
+    position: relative;
+}
+
+button{
+    background-color: #FFBA01;
+    position: absolute;
+    bottom: 10px;
+}

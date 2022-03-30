@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="projet1" version="4">
+  <OBJECT>
+    <ID name="projet1" mc="Standard.Package" uid="7c27d755-1b5e-441f-83c6-0aac93925082"/>
+    <PID name="Projet1" mc="Standard.Project" uid="e06d8e09-4438-4951-9b03-02b1ae60940b"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[projet1]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Adhérent" mc="Standard.Actor" uid="3c3dc9f8-c2d4-47d6-93df-bebd021c94ce"/>
+        <COMPID name="Participer à la vie associative" mc="Standard.UseCase" uid="5e288e96-e61c-4a09-a340-154b7d29fac4"/>
+        <COMPID name="Secrétaire" mc="Standard.Actor" uid="a22197bf-c761-46ae-81b3-cfc52adc820e"/>
+        <COMPID name="Gérer la vie associative" mc="Standard.UseCase" uid="78d89f5e-f953-4422-8fcf-3c5ba4884482"/>
+        <COMPID name="Directeur" mc="Standard.Actor" uid="520287c6-a0c0-4e10-bdcf-52ce60b68234"/>
+        <COMPID name="Saisir des informations" mc="Standard.UseCase" uid="a24125e1-88bf-4854-9ea1-256e7e8f2895"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="AssoParents" mc="Standard.UseCaseDiagram" uid="ecc3c71d-6b59-402a-9406-b4c8501f30a4"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
