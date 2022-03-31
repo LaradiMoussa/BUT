@@ -1,0 +1,34 @@
+1 - accidents sur sol sec avec une intempérie "pluie forte"
+
+	MEtatSurface
+		
+		code_etat_surface (pour le lier la table à MAccident)
+		libelle_etat_surface (pour mettre un mot sur l'état de la surface)
+
+	MIntemperie
+
+		code (pour lier la table à MAccident)
+		libelle (pour mettre un mot sur l'intempérie en cours)
+
+	MAccident
+	
+		intemp_id (pour lier la table à MIntemperie)
+		etat_surface_id (pour lier la table à MEtatSurface)
+
+		
+2 - acccidents par éblouissement de phares avec comme luminosité "jour"
+
+	MLuminosite
+
+		code (pour lier la table à MAccident)
+		libelle (pour avoir un mot précis sur la luminosité)
+
+	MCause
+
+		cause (pour lier la table à MAccident)
+		libelle (la description de la cause)
+
+	MAccident
+
+		cause_id (pour lier la table à MCause)
+		lum_id (pour lier la table à MLuminosité)

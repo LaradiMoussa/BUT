@@ -3,3 +3,4 @@ FROM `MAccident`AS A JOIN MDate AS D ON A.date_id = D.date_id
 WHERE A.lum_id = 1 
 AND TIME(D.DateFormatStandard) BETWEEN 22:00:00 AND 23:59:59 
 AND TIME(D.DateFormatStandard) BETWEEN 00:00:00 AND 05:00:00
+

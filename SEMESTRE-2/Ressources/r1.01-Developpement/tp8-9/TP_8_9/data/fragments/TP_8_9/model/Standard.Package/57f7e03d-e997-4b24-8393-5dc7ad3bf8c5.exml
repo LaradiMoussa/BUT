@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="tp_8_9" version="4">
+  <OBJECT>
+    <ID name="tp_8_9" mc="Standard.Package" uid="57f7e03d-e997-4b24-8393-5dc7ad3bf8c5"/>
+    <PID name="TP_8_9" mc="Standard.Project" uid="7e0b4258-abc0-4694-9bda-77ce69a23cbe"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[tp_8_9]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Interaction" mc="Standard.Interaction" uid="0118c05e-4d93-4ebd-a2bd-2acd04585733"/>
+        <COMPID name="Interaction1" mc="Standard.Interaction" uid="308a5f41-156f-4795-b940-0d157d5ec7f7"/>
+        <COMPID name="Interaction2" mc="Standard.Interaction" uid="8a8e886b-4d22-474c-bc5b-5560067cb524"/>
+        <COMPID name="Interaction3" mc="Standard.Interaction" uid="5da68df8-6f3a-41a9-8a48-9e6f34c1994d"/>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="Administrateur système" mc="Standard.Actor" uid="6d4be024-d246-4a3b-a3a0-0f4736254a8c"/>
+        <COMPID name="Client" mc="Standard.Actor" uid="dd652513-92af-45de-9069-b5ecfa211e24"/>
+        <COMPID name="Gerer les hotels" mc="Standard.UseCase" uid="cbfd82a8-8774-40c1-9761-7c72928669ff"/>
+        <COMPID name="Reserver une chambre" mc="Standard.UseCase" uid="265732a8-d8c1-41b7-88f5-2bf94cc72e09"/>
+        <COMPID name="Administrateur système" mc="Standard.Actor" uid="41ad37ca-e3b1-4f11-8b7d-763fefbfd71c"/>
+        <COMPID name="Ajouter des hotels" mc="Standard.UseCase" uid="602f8152-b18f-4280-a1fc-71c9fcb7b4f7"/>
+        <COMPID name="Supprimer des hotels" mc="Standard.UseCase" uid="d0c5bec8-cfcf-4daa-83a1-1390bea274f9"/>
+        <COMPID name="Modifier accecibilté de reservation d'un hotel" mc="Standard.UseCase" uid="0ef4374d-34c7-433f-9962-6af7d724e29d"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagramme de cas d'utilisation principale" mc="Standard.UseCaseDiagram" uid="aa5ca0d2-4860-460e-8fc5-720d75f5e647"/>
+        <COMPID name="Diagramme de cas d'utilisation tp_8_9 admin" mc="Standard.UseCaseDiagram" uid="e4dd5883-c41c-4d25-a1db-74e2b61e5328"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
