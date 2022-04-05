@@ -1,0 +1,99 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Etat hotel" version="4">
+  <OBJECT>
+    <ID name="Etat hotel" mc="Standard.StateMachine" uid="360830ac-6253-4f37-b6ea-402710ca26d0"/>
+    <PID name="tp_8_9" mc="Standard.Package" uid="57f7e03d-e997-4b24-8393-5dc7ad3bf8c5"/>
+    <ATTRIBUTES>
+      <ATT name="Kind">Dynamic</ATT>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[Etat hotel]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Top">
+        <OBJECT>
+          <ID name="" mc="Standard.Region" uid="08d8fcb3-badf-4fdd-82b0-496166c93e6a"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Sub">
+              <OBJECT>
+                <ID name="Initial State" mc="Standard.InitialPseudoState" uid="806c3c9a-c88a-42a8-9852-4bee64c0a482"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Initial State]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OutGoing">
+                    <OBJECT>
+                      <ID name="Ajouté par l'admin" mc="Standard.Transition" uid="fb99d50d-d6a4-417d-8bfb-4572da20a543"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Ajouté par l'admin]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="en activité" mc="Standard.State" uid="9d446f8e-8cf6-4380-9760-630b3fa33513"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Final State" mc="Standard.FinalState" uid="6241bf77-72c2-49d8-b2e5-4da4fff11e81"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Final State]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="en activité" mc="Standard.State" uid="9d446f8e-8cf6-4380-9760-630b3fa33513"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[en activité]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OutGoing">
+                    <OBJECT>
+                      <ID name="Supprimé par l'admin" mc="Standard.Transition" uid="e72754d8-2421-439d-aacc-e3ae441a1b66"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Supprimé par l'admin]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Final State" mc="Standard.FinalState" uid="6241bf77-72c2-49d8-b2e5-4da4fff11e81"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagramme d'état State Machine" mc="Standard.StateMachineDiagram" uid="faa8a00f-c55a-47e0-8da7-983d746c23de"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

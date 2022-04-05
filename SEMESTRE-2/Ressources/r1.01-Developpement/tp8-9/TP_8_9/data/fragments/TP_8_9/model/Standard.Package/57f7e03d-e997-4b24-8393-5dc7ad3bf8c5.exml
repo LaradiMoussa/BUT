@@ -14,10 +14,13 @@
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedBehavior">
-        <COMPID name="Interaction" mc="Standard.Interaction" uid="0118c05e-4d93-4ebd-a2bd-2acd04585733"/>
-        <COMPID name="Interaction1" mc="Standard.Interaction" uid="308a5f41-156f-4795-b940-0d157d5ec7f7"/>
-        <COMPID name="Interaction2" mc="Standard.Interaction" uid="8a8e886b-4d22-474c-bc5b-5560067cb524"/>
-        <COMPID name="Interaction3" mc="Standard.Interaction" uid="5da68df8-6f3a-41a9-8a48-9e6f34c1994d"/>
+        <COMPID name="Réserver une chambre" mc="Standard.Interaction" uid="0118c05e-4d93-4ebd-a2bd-2acd04585733"/>
+        <COMPID name="Ajouter un hotel" mc="Standard.Interaction" uid="308a5f41-156f-4795-b940-0d157d5ec7f7"/>
+        <COMPID name="Supprimer un hotel" mc="Standard.Interaction" uid="8a8e886b-4d22-474c-bc5b-5560067cb524"/>
+        <COMPID name="Supprimer un hotel" mc="Standard.Interaction" uid="5da68df8-6f3a-41a9-8a48-9e6f34c1994d"/>
+        <COMPID name="Activité Réservation" mc="Standard.Activity" uid="d1e37e5e-b157-4a16-a010-8afbb2c6ea14"/>
+        <COMPID name="Réserver une chambre" mc="Standard.StateMachine" uid="5dbc44a8-29dd-4b91-9a0d-574218d012ab"/>
+        <COMPID name="State Machine" mc="Standard.StateMachine" uid="360830ac-6253-4f37-b6ea-402710ca26d0"/>
       </COMP>
       <COMP relation="OwnedElement">
         <COMPID name="Administrateur système" mc="Standard.Actor" uid="6d4be024-d246-4a3b-a3a0-0f4736254a8c"/>
@@ -28,10 +31,15 @@
         <COMPID name="Ajouter des hotels" mc="Standard.UseCase" uid="602f8152-b18f-4280-a1fc-71c9fcb7b4f7"/>
         <COMPID name="Supprimer des hotels" mc="Standard.UseCase" uid="d0c5bec8-cfcf-4daa-83a1-1390bea274f9"/>
         <COMPID name="Modifier accecibilté de reservation d'un hotel" mc="Standard.UseCase" uid="0ef4374d-34c7-433f-9962-6af7d724e29d"/>
+        <COMPID name="Client" mc="Standard.Class" uid="f0503840-dfa3-4cb0-a78a-1591a9d1231e"/>
+        <COMPID name="Chambre" mc="Standard.Class" uid="5d9b78a0-f82a-4394-a44a-3953e1856c1e"/>
+        <COMPID name="Hotel" mc="Standard.Class" uid="32b8e5e9-a855-4bb3-8f5b-62bf3d3ca2b4"/>
+        <COMPID name="Réservation" mc="Standard.Class" uid="6397304c-9c5d-493a-b06e-48adaa91ed5e"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Diagramme de cas d'utilisation principale" mc="Standard.UseCaseDiagram" uid="aa5ca0d2-4860-460e-8fc5-720d75f5e647"/>
         <COMPID name="Diagramme de cas d'utilisation tp_8_9 admin" mc="Standard.UseCaseDiagram" uid="e4dd5883-c41c-4d25-a1db-74e2b61e5328"/>
+        <COMPID name="Diagramme de classe tp_8_9" mc="Standard.ClassDiagram" uid="8bbdd87f-19bf-4196-b342-51572c615793"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>
