@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.13.2, 2022-03-28T12:29:46. -->
+<!-- Written by QtCreator 4.13.2, 2022-04-05T16:54:57. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -325,8 +325,9 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:F:/BUT/SEMESTRE-2/Ressources/r2.02-dev-applis-avec-IHM/ConvertisseurTemp2/ConvertisseurTemp2.pro</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">F:/BUT/SEMESTRE-2/Ressources/r2.02-dev-applis-avec-IHM/ConvertisseurTemp2/ConvertisseurTemp2.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">ConvertisseurTemp22</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:F:/BUT/Tout_BUT/SEMESTRE-2/Ressources/r2.02-dev-applis-avec-IHM/ConvertisseurTemp2/ConvertisseurTemp2.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">F:/BUT/Tout_BUT/SEMESTRE-2/Ressources/r2.02-dev-applis-avec-IHM/ConvertisseurTemp2/ConvertisseurTemp2.pro</value>
     <value type="QString" key="RunConfiguration.Arguments"></value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
     <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>
