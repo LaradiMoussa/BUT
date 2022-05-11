@@ -1,0 +1,148 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="State Machine" version="4">
+  <OBJECT>
+    <ID name="State Machine" mc="Standard.StateMachine" uid="ec0936d5-607a-4987-b151-00976c6959c5"/>
+    <PID name="et" mc="Standard.Package" uid="3cd206b6-a21a-4489-9010-08ef715e710a"/>
+    <ATTRIBUTES>
+      <ATT name="Kind">Dynamic</ATT>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[State Machine]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Top">
+        <OBJECT>
+          <ID name="" mc="Standard.Region" uid="3e9ad384-2b10-432b-9e3e-d37bee7aa073"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Sub">
+              <OBJECT>
+                <ID name="Initial State" mc="Standard.InitialPseudoState" uid="dcc82882-7b92-4717-b294-d1118f4e4410"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Initial State]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OutGoing">
+                    <OBJECT>
+                      <ID name="Lancer le jeu du Chifoumi" mc="Standard.Transition" uid="0a6da0ce-39fc-4250-ba4d-52755f46df61"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Lancer le jeu du Chifoumi]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Ouvert" mc="Standard.State" uid="0ff5cf52-b779-4fa3-b3bc-040437cdf6b2"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Ouvert" mc="Standard.State" uid="0ff5cf52-b779-4fa3-b3bc-040437cdf6b2"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Ouvert]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OutGoing">
+                    <OBJECT>
+                      <ID name="Cliquer sur Nouvelle partie" mc="Standard.Transition" uid="aa26e259-fb62-47d8-a5f6-d61c384aff50"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Cliquer sur Nouvelle partie]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="En jeu" mc="Standard.State" uid="027941ac-5846-45ee-bfa1-d9bdbba64fa8"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="En jeu" mc="Standard.State" uid="027941ac-5846-45ee-bfa1-d9bdbba64fa8"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[En jeu]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OutGoing">
+                    <OBJECT>
+                      <ID name="Fermer le jeu du chifoumi" mc="Standard.Transition" uid="b4590b87-358f-4b1b-ae31-8279c61d4c50"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Fermer le jeu du chifoumi]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Final State" mc="Standard.FinalState" uid="40114817-cf31-4350-bac9-3f5c2a34d906"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="Fin de la partie" mc="Standard.Transition" uid="85a21edf-335b-4e35-b9ab-71a52e5c4dd7"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Fin de la partie]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Ouvert" mc="Standard.State" uid="0ff5cf52-b779-4fa3-b3bc-040437cdf6b2"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Final State" mc="Standard.FinalState" uid="40114817-cf31-4350-bac9-3f5c2a34d906"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Final State]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagramme d'état State Machine" mc="Standard.StateMachineDiagram" uid="7ebd40d8-c376-4571-8ff1-d2d7abcb13de"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

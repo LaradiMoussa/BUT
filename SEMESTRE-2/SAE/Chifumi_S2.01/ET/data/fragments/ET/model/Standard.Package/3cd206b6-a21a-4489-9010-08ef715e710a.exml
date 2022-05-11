@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="et" version="4">
+  <OBJECT>
+    <ID name="et" mc="Standard.Package" uid="3cd206b6-a21a-4489-9010-08ef715e710a"/>
+    <PID name="ET" mc="Standard.Project" uid="edd78562-8eb8-4d0f-a2cc-9f921ff2b69c"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[et]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="State Machine" mc="Standard.StateMachine" uid="ec0936d5-607a-4987-b151-00976c6959c5"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
