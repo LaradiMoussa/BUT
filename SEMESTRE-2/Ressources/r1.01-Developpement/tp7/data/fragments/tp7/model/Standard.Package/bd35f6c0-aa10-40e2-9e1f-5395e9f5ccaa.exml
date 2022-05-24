@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="tp7" version="4">
+  <OBJECT>
+    <ID name="tp7" mc="Standard.Package" uid="bd35f6c0-aa10-40e2-9e1f-5395e9f5ccaa"/>
+    <PID name="tp7" mc="Standard.Project" uid="7f38172d-a33d-4668-87f8-4eceb3781de3"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[tp7]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Activity" mc="Standard.Activity" uid="7d39c5ca-3d62-49e7-ac41-e927f084cfb9"/>
+        <COMPID name="Activity1" mc="Standard.Activity" uid="b9e87420-e2b1-4088-98ce-261b932889b3"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
