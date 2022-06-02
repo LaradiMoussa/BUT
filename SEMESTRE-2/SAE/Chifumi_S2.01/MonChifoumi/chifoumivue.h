@@ -1,21 +1,29 @@
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+#ifndef CHIFOUMIVUE_H
+#define CHIFOUMIVUE_H
 
 #include <QMainWindow>
 
 QT_BEGIN_NAMESPACE
-namespace Ui { class MainWindow; }
+namespace Ui { class chifoumivue; }
 QT_END_NAMESPACE
 
-class MainWindow : public QMainWindow
+class chifoumivue : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr);
-    ~MainWindow();
+    chifoumivue(QWidget *parent = nullptr);
+    ~chifoumivue();
+
+public slots:
+    void NouvellePartie();
+    void CoupPierre();
+    void CoupFeuille();
+    void CoupCiseaux();
+
 
 private:
-    Ui::MainWindow *ui;
+    Ui::chifoumivue *ui;
 };
-#endif // MAINWINDOW_H
+
+#endif // CHIFOUMIVUE_H
