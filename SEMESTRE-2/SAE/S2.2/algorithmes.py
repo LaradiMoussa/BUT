@@ -223,12 +223,14 @@ def chemins(dep, arv):
         som = pile_chemin_bel[i]
         pile_chemin_bel.append(dic_bel[som][1])
         i=i+1
+     
+    som = indice_som(arv)
         
-    while som != dep:                               #Reconstitution de Floyd Warshall
+    while nom(som) != dep:                               #Reconstitution de Floyd Warshall
         
-        som = pile_chemin_FW[i]
-        pile_chemin_FW.append(predFW[indice_som(dep)][indice_som(som)])
-        i=i+1
+        pred=predFW[indice_som(dep)][som]
+        pile_chemin_FW.append(nom(pred))
+        som=pred
         
     #affichage
     chemin_dij=[]
@@ -250,8 +252,8 @@ def chemins(dep, arv):
         chemin_FW.append(som)
     print("Floyd Warshall : chemin : ", chemin_FW, "distance : ", distFW[indice_som(dep)][indice_som(arv)])
     
-        
-print(chemins('BRNAIN', 'HDVBAY'))
+
+
     
     
 
