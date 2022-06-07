@@ -70,8 +70,23 @@ void chifoumivue::CoupPierre()
     MaPartie.majScores(gagnant);
     QString ScoreJ = QString::number(MaPartie.getScoreJoueur());
     QString ScoreM = QString::number(MaPartie.getScoreMachine());
+    QString ScoreO = QString::number(MaPartie.getScoreObjectif());
     ui->ScoreJoueur->setText(ScoreJ);
     ui->ScoreMachine->setText(ScoreM);
+    if (ScoreJ == ScoreO)
+    {
+        QMessageBox msgBox;
+        msgBox.setWindowTitle("Fin de la partie");
+        msgBox.setText("Bravo Joueur! Vous gagnez avec 5 points.");
+        msgBox.exec();
+    }
+    if (ScoreM == ScoreO)
+    {
+        QMessageBox msgBox;
+        msgBox.setWindowTitle("Fin de la partie");
+        msgBox.setText("Bravo Machine! Vous gagnez avec 5 points.");
+        msgBox.exec();
+    }
 }
 
 void chifoumivue::CoupFeuille()
@@ -102,8 +117,23 @@ void chifoumivue::CoupFeuille()
     MaPartie.majScores(gagnant);
     QString ScoreJ = QString::number(MaPartie.getScoreJoueur());
     QString ScoreM = QString::number(MaPartie.getScoreMachine());
+    QString ScoreO = QString::number(MaPartie.getScoreObjectif());
     ui->ScoreJoueur->setText(ScoreJ);
     ui->ScoreMachine->setText(ScoreM);
+    if (ScoreJ == ScoreO)
+    {
+        QMessageBox msgBox;
+        msgBox.setWindowTitle("Fin de la partie");
+        msgBox.setText("Bravo Joueur! Vous gagnez avec 5 points.");
+        msgBox.exec();
+    }
+    if (ScoreM == ScoreO)
+    {
+        QMessageBox msgBox;
+        msgBox.setWindowTitle("Fin de la partie");
+        msgBox.setText("Bravo Machine! Vous gagnez avec 5 points.");
+        msgBox.exec();
+    }
 
 }
 
@@ -135,8 +165,23 @@ void chifoumivue::CoupCiseaux()
     MaPartie.majScores(gagnant);
     QString ScoreJ = QString::number(MaPartie.getScoreJoueur());
     QString ScoreM = QString::number(MaPartie.getScoreMachine());
+    QString ScoreO = QString::number(MaPartie.getScoreObjectif());
     ui->ScoreJoueur->setText(ScoreJ);
     ui->ScoreMachine->setText(ScoreM);
+    if (ScoreJ == ScoreO)
+    {
+        QMessageBox msgBox;
+        msgBox.setWindowTitle("Fin de la partie");
+        msgBox.setText("Bravo Joueur! Vous gagnez avec 5 points.");
+        msgBox.exec();
+    }
+    if (ScoreM == ScoreO)
+    {
+        QMessageBox msgBox;
+        msgBox.setWindowTitle("Fin de la partie");
+        msgBox.setText("Bravo Machine! Vous gagnez avec 5 points.");
+        msgBox.exec();
+    }
 }
 
 void chifoumivue::AProposDe()

@@ -226,7 +226,7 @@ def chemins(dep, arv):
      
     som = indice_som(arv)
         
-    while nom(som) != dep:                               #Reconstitution de Floyd Warshall
+    while nom(som) != dep:                          #Reconstitution de Floyd Warshall
         
         pred=predFW[indice_som(dep)][som]
         pile_chemin_FW.append(nom(pred))

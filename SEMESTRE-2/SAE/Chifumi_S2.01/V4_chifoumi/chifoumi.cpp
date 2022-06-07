@@ -9,6 +9,7 @@ chifoumi::chifoumi()
     (*this).SelectMachine = rien;
     (*this).ScoreJoueur = 0;
     (*this).ScoreMachine = 0;
+    (*this).ScoreObjectif = 5;
 }
 
 chifoumi::~chifoumi()
@@ -34,6 +35,11 @@ unsigned int chifoumi::getScoreJoueur()
 unsigned int chifoumi::getScoreMachine()
 {
     return (*this).ScoreMachine;
+}
+
+unsigned int chifoumi::getScoreObjectif()
+{
+    return (*this).ScoreObjectif;
 }
 
 char chifoumi::determinerGagnant()
@@ -123,6 +129,11 @@ void chifoumi::setScoreJoueur(unsigned int p_score)
 void chifoumi::setScoreMachine(unsigned int p_score)
 {
     (*this).ScoreMachine = p_score;
+}
+
+void chifoumi::setScoreObjectif(unsigned int p_score)
+{
+    (*this).ScoreObjectif = p_score;
 }
 
 void chifoumi::majScores(char p_gagnant)
