@@ -15,6 +15,22 @@ chifoumivue::chifoumivue(QWidget *parent)
     , ui(new Ui::chifoumivue)
 {
     ui->setupUi(this);
+     // On cache le jeu tant que l'utilisateur ne s'est pas authentifier
+     this->hide();
+
+     // Tant que le joueur n'est pas connecté, on l'invite à se connecter
+     // pour cela, on ouvre la fenêtre de connexion
+     conn->exec();
+
+     if (!conn->infoConnexion()){
+         // Dans le cas, où l'utilisateur n'a pas voulu se connecter,
+         // on ferme le jeu
+         close();
+     }
+     else{
+         // Sinon, si l'utilisateur s'est connecté, on affiche la page du jeu
+         this->show();
+
     QObject::connect(ui->BoutonPartie, SIGNAL(clicked()),this,SLOT(NouvellePartie()));
     QObject::connect(ui->Pierre, SIGNAL(clicked()),this,SLOT(CoupPierre()));
     QObject::connect(ui->Feuille, SIGNAL(clicked()),this,SLOT(CoupFeuille()));
@@ -27,7 +43,7 @@ chifoumivue::chifoumivue(QWidget *parent)
     timer = new QTimer(this);
     timer->setInterval(1000);
     connect(timer,SIGNAL(timeout()),this,SLOT(Chrono()));
-
+     }
 
 }
 

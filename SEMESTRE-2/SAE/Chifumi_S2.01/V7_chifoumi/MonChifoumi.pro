@@ -10,6 +10,8 @@ CONFIG += c++11
 
 SOURCES += \
     chifoumi.cpp \
+    connexion.cpp \
+    database.cpp \
     main.cpp \
     chifoumivue.cpp \
     parametres.cpp
@@ -17,10 +19,13 @@ SOURCES += \
 HEADERS += \
     chifoumi.h \
     chifoumivue.h \
+    connexion.h \
+    database.h \
     parametres.h
 
 FORMS += \
     chifoumivue.ui \
+    connexion.ui \
     parametres.ui
 
 # Default rules for deployment.

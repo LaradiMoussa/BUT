@@ -3,6 +3,9 @@
 
 #include <QDialog>
 #include <QMainWindow>
+#include "chifoumi.h"
+#include "connexion.h"
+#include "parametres.h"
 #include <QTimer>
 
 QT_BEGIN_NAMESPACE
@@ -34,6 +37,7 @@ private:
     QTimer *timer;
     int sec;
     int tps_init;
+    connexion *conn = new connexion(this);
     bool enPause = false;
     int point_gagnant;
     QString nomJoueur;

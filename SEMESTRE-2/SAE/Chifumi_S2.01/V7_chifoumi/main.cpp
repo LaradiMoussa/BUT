@@ -1,5 +1,6 @@
 #include "chifoumivue.h"
 #include "parametres.h"
+#include "connexion.h"
 
 #include <QApplication>
 
