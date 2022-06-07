@@ -1,15 +1,18 @@
 #include "chifoumi.h"
+#include "parametres.h"
 
 #include <cstdlib>
 #include <ctime>
 
 chifoumi::chifoumi()
 {
+
     (*this).SelectJoueur = rien;
     (*this).SelectMachine = rien;
     (*this).ScoreJoueur = 0;
     (*this).ScoreMachine = 0;
     (*this).ScoreObjectif = 5;
+    (*this).Temps = 10;
 }
 
 chifoumi::~chifoumi()
@@ -40,6 +43,11 @@ unsigned int chifoumi::getScoreMachine()
 unsigned int chifoumi::getScoreObjectif()
 {
     return (*this).ScoreObjectif;
+}
+
+unsigned int chifoumi::getTemps()
+{
+    return (*this).Temps;
 }
 
 char chifoumi::determinerGagnant()
@@ -134,6 +142,11 @@ void chifoumi::setScoreMachine(unsigned int p_score)
 void chifoumi::setScoreObjectif(unsigned int p_score)
 {
     (*this).ScoreObjectif = p_score;
+}
+
+void chifoumi::setTemps(unsigned int p_score)
+{
+    (*this).Temps = p_score;
 }
 
 void chifoumi::majScores(char p_gagnant)

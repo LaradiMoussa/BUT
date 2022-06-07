@@ -18,6 +18,7 @@ class chifoumi
         unsigned int getScoreJoueur();
         unsigned int getScoreMachine();
         unsigned int getScoreObjectif();
+        unsigned int getTemps();
         char determinerGagnant();
         UnCoup genererUnCoup();
 
@@ -27,6 +28,7 @@ class chifoumi
         void setScoreJoueur(unsigned int p_score);
         void setScoreMachine(unsigned int p_score);
         void setScoreObjectif(unsigned int p_score);
+        void setTemps(unsigned int p_score);
         void majScores(char p_gagnant);
         void initScores();
         void initCoups();
@@ -35,6 +37,7 @@ class chifoumi
         unsigned int ScoreJoueur;
         unsigned int ScoreMachine;
         unsigned int ScoreObjectif;
+        unsigned int Temps;
         UnCoup SelectJoueur;
         UnCoup SelectMachine;
 
